@@ -1,15 +1,14 @@
 {
   "projects": {
-    "default": "kv-web-apps"
+    "default": "kv-api-services-2"
   },
   "targets": {
     "kv-web-apps": {
       "hosting": {
         "react": [
-          "KV-Dev-WebApp12"
+          "KV-WebApp-12"
         ]
       }
     }
-  },
-  "etags": {}
+  }
 }

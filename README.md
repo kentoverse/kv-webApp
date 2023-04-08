@@ -1,5 +1,7 @@
 ## KENTOVERSE WEB APP
 
+DEV - [-https://kv-api-services-2.firebaseapp.com/]
+
 # The Project
 - Phase 1 - Tech Stack & Tooling
 - Phase 2 - Environment
@@ -109,6 +111,17 @@ git remote add google https://source.developers.google.com/p/kv-web-apps/r/kv-we
 sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 
 ```
+```bash
+
+
+````
+# enable the hidden command
+firebase --open-sesame deletegcfartifacts
+# purge everything
+firebase functions:deletegcfartifacts 
+firebase experiments:enable webframeworks
+firebase use --add [project]
+
 
 https://docs.docker.com/get-started/02_our_app/
 
