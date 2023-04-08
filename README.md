@@ -58,8 +58,6 @@ https://blog.logrocket.com/comparing-typescript-and-proptypes-in-react-applicati
 https://nextjs.org/docs/advanced-features/debugging
 
 
-   
-
 ## Start Local Development
 
 ```bash ( Open project in IDE )
@@ -73,14 +71,13 @@ npm run dev
 npm run storybook                   /* develop with (storybook)
 npm run build
 npm run start                       /* run production code
-```
 
-```bash ( Deploy project to DEV.env )
+- ( Deploy project to DEV.env )
 firebase login
 firebase deploy
-```
 
-```bash ( Upload project to Github Repo )
+
+- ( Upload project to Github Repo )
 git pull origin main
 git checkout -b [dev-branch-name]
 git add .
@@ -91,30 +88,32 @@ git checkout main                   /* rebase main branch
 git pull origin main
 git checkout dev-branch
 git rebase main
-git checkout main                   /* merge main branch (github)
+git checkout main                   /* merge main branch - - 
+
 git merge dev-branch
 git push origin main
-git remote -v                       /* merge main branch (google)
-git push google main 
-git merge google/main
-```
+git remote -v                       /* merge main branch 
 
-```bash (Useful CLI)
+- (Useful CLI)
 rm package-lock.json && rm -rf node_modules
 rm -rf .next && rm -rf out 
 npx next info
 npx next -h 
 
-git remote add google https://source.developers.google.com/p/kv-web-apps/r/kv-webapp-dev
+git remote add google 
+https://source.developers.google.com/p/kv-web-apps/r/kv-webapp-dev
+
+## Reset to main last version
+git checkout -b [new-branch]
+git add . && git commit -m "test" && git push -f origin [new-branch]
+git fetch
+git reset --hard origin/main
+git push -f origin main
 
 // authorized permission to folder
 sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 
-```
-```bash
 
-
-````
 # enable the hidden command
 firebase --open-sesame deletegcfartifacts
 # purge everything
@@ -123,39 +122,14 @@ firebase experiments:enable webframeworks
 firebase use --add [project]
 
 
-https://docs.docker.com/get-started/02_our_app/
+```
+(https://docs.docker.com/get-started/02_our_app/)
 
-https://nextjs.org/docs/advanced-features/static-html-export
+(https://nextjs.org/docs/advanced-features/static-html-export)
 
-{
-  "hosting": {
-    "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [{
-        "source": "**",
-        "destination": "/index.html"
-      }],
-    "frameworksBackend": {
-      "region": "us-east1"
-    },
-    "cleanUrls": true,
-    "headers": [
-      {
-        "source": "/favicon.ico",
-        "headers": [{
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }]
-      }
-    ]
-  }
-}
 
-/** FETCHING DATA 
+
+- (FETCHING DATA) 
 Client Navigation - [getInitialProps] 
 Build Time - [getStaticProps]
 

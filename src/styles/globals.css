@@ -4,20 +4,51 @@
 
 
 @layer base {
-  .default {
-    --color-primary: 255 115 179;
+  :root {
+    --color-primary: 105 115 179;
     --color-secondary: 111 114 185;
-    --foreground-rgb: 200, 200, 200; /** text Color **/
-    --background-start-rgb: 245, 211, 91; /** background Color **/
-    --background-end-rgb: 155, 200, 200; /** **/ /** background Color 2?**/
+    --foreground-rgb: 20, 20, 20; /** text Color **/
+    --background-start-rgb: 15, 21, 91; /** background Color **/
+    --background-end-rgb: 15, 10, 20; /** **/ /** background Color 2?**/
+    --color-text-base: 255, 255, 255;
   }
   
 }
 
 @layer components {
 
+
+
+/** change to custom card component**/
+.kv-header {
+  color: theme('colors.primary');
+  background-color: theme('colors.gold3');
+  border-radius: theme('borderRadius.sm');
+/* padding: theme('spacing.4'); */
+/* box-shadow: theme('boxShadow.xl'); */
+}
+
+.card {
+  /* background-color: theme('colors.kv'); */
+  border-radius: theme('borderRadius.lg');
+  padding: theme('spacing.6');
+  box-shadow: theme('boxShadow.xl');
+}
+
+
+
+.kv-hero {
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  background-color: theme('colors.gold3');
+}
+
+
 .button--default {
-  @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+  @apply text-white bg-gradient-to-br 
+  from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none 
+  focus:ring-blue-300 dark:focus:ring-blue-800 
   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ;    
 } 
 .button--action {
@@ -41,36 +72,13 @@
   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
 
-
-
-/** change the tailwind card component**/
-.card {
-background-color: theme('colors.white');
-border-radius: theme('borderRadius.lg');
-padding: theme('spacing.6');
-box-shadow: theme('boxShadow.xl');
-}
-
-/** change to custom card component**/
-.kv-theme {
-background-color: theme('colors.red.500');
-border-radius: theme('borderRadius.sm');
-/* padding: theme('spacing.4'); */
-/* box-shadow: theme('boxShadow.xl'); */
-}
-
-/** use apply to change the material ui example component**/
-.select2-dropdown-mu {
-  @apply rounded-b-lg shadow-md;
-}
-
 }
 
 
 @layer utilities {
 .text-primary:hover {
 color: #007bff;
-}
+  }
 }
 
 
