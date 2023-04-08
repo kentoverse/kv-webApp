@@ -1,0 +1,34 @@
+// import { usePathname } from "next/navigation";
+// import { Inter } from 'next/font/google'
+// import Image from "next/image";
+// import Link from "next/link";
+// import HeaderKV from "@components/system/header-kv";
+// import CardGroup from "@components/organism/card-group";
+
+
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-inter',
+// })
+
+
+
+// const pageRoutes = [
+//   { name: "Dashboard", path: "/dashboard" },
+//   { name: "Project", path: "/project" },
+//   { name: "About", path: "/about" },
+//   { name: "Business", path: "/business" },
+// ]
+
+
+// export default function Home(props: { theme: any; component: any; }) {
+//   const path = usePathname().slice(1);
+
+//   return (
+//     <>
+    
+//       <CardGroup color={undefined} children={undefined}></CardGroup>
+//     </>
+//   )
+// }
+

@@ -2,13 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@layer base {
+  .default {
+    --color-primary: 255 115 179;
+    --color-secondary: 111 114 185;
+    --foreground-rgb: 200, 200, 200; /** text Color **/
+    --background-start-rgb: 245, 211, 91; /** background Color **/
+    --background-end-rgb: 155, 200, 200; /** **/ /** background Color 2?**/
+  }
+  
 }
 
-@media (prefers-color-scheme: dark) {
+@layer components {
+
+.button--default {
+  @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ;    
+} 
+.button--action {
+  @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+.button--success {
+  @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+.button--warning {
+  @apply text-white bg-gradient-to-r from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+.button--danger {
+  @apply text-white bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+.button--accent {
+  @apply text-white bg-gradient-to-r from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
+}
+
+
+
+/** change the tailwind card component**/
+.card {
+background-color: theme('colors.white');
+border-radius: theme('borderRadius.lg');
+padding: theme('spacing.6');
+box-shadow: theme('boxShadow.xl');
+}
+
+/** change to custom card component**/
+.kv-theme {
+background-color: theme('colors.red.500');
+border-radius: theme('borderRadius.sm');
+/* padding: theme('spacing.4'); */
+/* box-shadow: theme('boxShadow.xl'); */
+}
+
+/** use apply to change the material ui example component**/
+.select2-dropdown-mu {
+  @apply rounded-b-lg shadow-md;
+}
+
+}
+
+
+@layer utilities {
+.text-primary:hover {
+color: #007bff;
+}
+}
+
+
+
+@media (prefers-color-scheme: light) { /** set color / dark theme **/
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -16,12 +83,15 @@
   }
 }
 
-body {
+
+.next-theme {
   color: rgb(var(--foreground-rgb));
+  
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+    to bottom, 
+    transparent,
+    rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
 }
+
+

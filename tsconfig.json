@@ -15,9 +15,9 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@styles/*": ["./src/*"]
+      "@styles/*": ["./src/styles/*"], "@components/*": ["./src/components/*"], 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/atoms/button-gradeSet.jsx", "src/components/organism/hero-next.jsx"],
   "exclude": ["node_modules"]
 }
