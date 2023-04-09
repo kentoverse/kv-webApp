@@ -1,15 +1,8 @@
 
-export default function HeroCallToAction({ color, children }) {
-
-    const colorVariants = {
-      blue: 'bg-blue-600 hover:bg-blue-500 text-white',
-      red: 'bg-red-500 hover:bg-red-400 text-white',
-      yellow: 'bg-yellow-300 hover:bg-yellow-400 text-black',
-    }
+export default function HeroCallToAction(props) {
   
     return (
       <>
-
        {/* Hero (Call to Action) comp */}
        <div className={`${props.theme} relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl`}>
           <Image
@@ -39,7 +32,6 @@ export default function HeroCallToAction({ color, children }) {
             </div>
           </div>
         </div>
-      
       
       </>
     )

@@ -1,26 +1,22 @@
 
 import Image from "next/image"
 
-export default function HeroNext({ color, children }) {
+export default function HeroNext(props) {
 
   return (
     <>
       
-      <div className="hero
-      flex
-      place-items-center
-      ">
+      <div className="hero flex place-items-center">
         
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
           alt="Next.js Logo"
-          width={200}
+          width={140}
           height={80}
           priority
         />
       </div>
-
 
     </>
   )
@@ -28,7 +24,7 @@ export default function HeroNext({ color, children }) {
 
 
 
-{/* <div className="hero flex
+/* <div className="hero flex
 place-items-center
 before:absolute
 before:h-[300px] 
@@ -55,5 +51,5 @@ before:dark:from-transparent
 before:dark:to-blue-700/10 
 after:dark:from-sky-900 
 after:dark:via-[#0141ff]/40 
-before:lg:h-[360px]"> */}
+before:lg:h-[360px]"> */
   

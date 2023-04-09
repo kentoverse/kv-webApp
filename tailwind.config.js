@@ -7,31 +7,32 @@ module.exports = {
   ],
   theme: {
     container: {
-      center: true,
+      center: 'true',
     },
     extend: {
       colors: {
-        'gray': '#757575',
+        'gray' : '#757575',
         'graylight': '#BDBDBD',
-        'gold2': '#FFC107',
-        'gold3': '#FFA000',
-        'gold1': '#FFECB3',
+        'gold2' : '#FFC107',
+        'gold3' : '#FFA000',
+        'gold1' : '#FFECB3',
         'magenta2': '#FF4081',
       },
       textColor: {
-        'skin': 'rgb(var(--color-primary/<alpha-value>)',
-        'muted': 'rgb(var(--color-text-muted) / <alpha-value>)',
-        'inverted': 'rgb(var(--color-text-inverted) / <alpha-value>)'
+        'skin' : 'rgb(var(--color-primary/<alpha-value>)',
+        'muted' : 'rgb(var(--color-text-muted) / <alpha-value>)',
+        'inverted' : 'rgb(var(--color-text-inverted) / <alpha-value>)',
     },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'gradient-radial' : 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic' : 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern' : "url('/img/hero-pattern.svg')",
       },
     },
   },
   plugins: [],
 }
+
 
 
 

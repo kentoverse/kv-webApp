@@ -1,16 +1,16 @@
 
-const ButtonDynamic = props => (
+const ButtonDynamic = (props) => (
   <button>
     {props.children}
     <style jsx>{`
-      button {
-        color: #999;
+      .buttonSet {
+        color: ${props.action};
         display: inline-block;
         font-size: 2em;
       }
     `}</style>
     <style jsx>{`
-      button {
+      .buttonSet {
         padding: ${'large' in props ? '30' : '10'}px;
         background: 'indigo';
       }
@@ -23,7 +23,7 @@ const ButtonClassName = props => (
   <button className={'large' in props && 'large'}>
     {props.children}
     <style jsx>{`
-      button {
+      .buttonSet {
         padding: 20px;
         background: #eee;
         color: #999;
@@ -35,18 +35,13 @@ const ButtonClassName = props => (
   </button>
 )
 
-// const theme = {
-//   buttonColor: 'bg-gradient-to-r from-cyan-500 to-blue-500',
-//   buttonSize: 'mx-auto px-4'
-// }
-
 
 const ButtonInline = ({ label, theme }) => (
 
-  <button className={`${theme.buttonColor + ` ` + theme.buttonSize}`} type="button">
+  <button type="button" className={`"${theme.action + ` ` + theme.size}"`}>
     {label}
     <style jsx>{`
-      button {
+      .buttonSet {
         padding: 10px;
       }
     `}</style>
@@ -57,6 +52,6 @@ const ButtonInline = ({ label, theme }) => (
 export {
   ButtonDynamic,
   ButtonClassName,
-  ButtonInline
+  ButtonInline,
 }
 

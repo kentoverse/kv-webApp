@@ -1,19 +1,15 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import MainKV from "@components/system/main-kv";
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
 
   return (
+    <> 
 
-<MainKV>
+      <section className={`bg-pink-200 grid grid-rows-2 grid-flow-col gap-2`}>
 
-  
-        <section className={`${true} bg-pink-200 grid grid-rows-2 grid-flow-col gap-2`}>
-
-          <article className="">
+          <article className="text-md color-indigo-200">
 
             <a href="#"> <h4>Section Row</h4></a>
 
@@ -26,7 +22,7 @@ export default function Home() {
 
           </article>
 
-          <article className="">
+          <article className="text-md color-indigo-200">
             <a href="#"> <h4>Section Row</h4></a>
 
 
@@ -41,7 +37,7 @@ export default function Home() {
 
           </article>
 
-          <article className="">
+          <article className="text-md color-indigo-200">
             <a href="#"> <h4>Section Row</h4></a>
 
             <p>
@@ -55,50 +51,7 @@ export default function Home() {
           </article>
 
         </section>
-
-        <footer className="footer w-full">
-          <div className="grid grid-rows-2 grid-flow-col gap-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
-              Mauris nisl ligula, fermentum vel massa a, tempus malesuada nunc.
-              Mauris eu placerat lorem. Integer aliquam ultrices sem ac luctus.
-              Donec et porttitor lorem. Etiam lacinia dolor ut blandit malesuada.
-            </p>
-
-
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
-              Mauris nisl ligula, fermentum vel massa a, tempus malesuada nunc.
-              Mauris eu placerat lorem. Integer aliquam ultrices sem ac luctus.
-              Donec et porttitor lorem. Etiam lacinia dolor ut blandit malesuada.
-            </p>
-          </div>
-          <div>
-            <p>&copy; 2023 My Website</p>
-          </div>
-        </footer>
-        <script src="script.js"></script>
-
-        </MainKV>
-
+    
+        </>
   )
 }
-
-
-
-
-/* <div clasName="grid grid-cols-4 gap-4" key={c.id}>
-{allData?.results.map(c =>
-  <>
-    <p>{c.name}</p>
-    <p>{c.status}</p>
-    <p>{c.species}</p>
-    <p>{c.gender}</p>
-  </>
-)};
-
-</div> */

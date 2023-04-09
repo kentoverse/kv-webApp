@@ -1,11 +1,5 @@
 
-export default function HeroNext({ color, children }) {
-
-    const colorVariants = {
-      blue: 'bg-blue-600 hover:bg-blue-500 text-white',
-      red: 'bg-red-500 hover:bg-red-400 text-white',
-      yellow: 'bg-yellow-300 hover:bg-yellow-400 text-black',
-    }
+export default function HeroNext(props) {
   
     return (
       <>
@@ -61,7 +55,6 @@ export default function HeroNext({ color, children }) {
     </div>
 </div>
 </div>
-      
       </>
     )
   }
