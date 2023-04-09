@@ -1,10 +1,11 @@
 {
-  "/dashboard/business": "pages/dashboard/business.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
   "/api/hello": "pages/api/hello.js",
+  "/_error": "pages/_error.js",
+  "/dashboard/business": "pages/dashboard/business.html",
   "/dashboard/project": "pages/dashboard/project.html",
   "/": "pages/index.html",
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/layout": "pages/layout.html",
   "/404": "pages/404.html"
 }

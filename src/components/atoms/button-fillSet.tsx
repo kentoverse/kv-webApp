@@ -3,8 +3,9 @@ import React from "react";
 
 export default function ButtonFillSet({
   set, 
-  label} : 
-{   set: number,
+  label 
+}:{   
+    set: number,
     label: string
 }) {
 

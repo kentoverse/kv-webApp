@@ -10,7 +10,7 @@ export default function HeaderKV({
 
     return (
         <>
-            <header className={`${theme} first-letter:bg-gradient-to-r from-cyan-500 to-blue-500`}>  
+            <header className={`${theme} bg-gradient-to-r from-cyan-500 to-blue-500 items-center mx-auto px-4`}>  
                      {children}
             </header>
         </>
