@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <HeaderKV>
+      <HeaderKV theme={"theme-kv"}>
         <Component {...pageProps} />
       </HeaderKV>
     </>

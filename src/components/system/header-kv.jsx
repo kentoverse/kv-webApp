@@ -2,27 +2,50 @@ import LogoText from "@components/cells/logo-text";
 import NavbarMenu from "@components/organism/navbar-menu";
 import NavbarBottom from "@components/organism/navbar-bottom";
 import HeroNext from "@components/organism/hero-next";
-import ButtonFillSet from "@components/atoms/button-fillSet";
+import { ButtonDynamic, ButtonInline } from "@components/atoms/button-styled"
+import ButtonTW from "@components/atoms/button-tw";
 
-export default function HeaderKV ({ children }){
 
-    const theme = "kv-theme";
+const theme = {
+    buttonColor: 'bg-gradient-to-r from-cyan-500 to-blue-500',
+    buttonSize: 'mx-auto px-4'
+}
+
+
+
+export default function HeaderKV(props, {children}) {
+
+    const { setTheme = "theme-bv", 
+            number = 3, 
+            label = 'Tailwind' } = props;
 
     return (
         <>
-            <header className={`${theme} relative bg-fill flex min-h-screen flex-col items-center justify-between p-24`}>
-                <div className="wrapper z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+        <div className={`${setTheme}`}> 
+            <header className="header 
+                items-center mx-auto px-4">
+
+                <div className="wrapper">
                 <LogoText></LogoText>
-                <NavbarMenu numbwe={2} label={"Action"}></NavbarMenu>
+                <NavbarMenu></NavbarMenu>
                 <NavbarBottom></NavbarBottom>
                 </div>
+
                 <HeroNext></HeroNext>
-                <ButtonFillSet number={5} label={"Marc"}/>
-              </header>
+                <ButtonTW number={number} label={label} />
+                <ButtonDynamic>STYLED DYNAMIC</ButtonDynamic>
+                <ButtonInline theme={theme} label={"INLINE"} ></ButtonInline>
+            </header>
+
             {children}
+        </div>
+
         </>
     )
 }
 
 
 // ${inter.variable} 
+{/* <header className="header
+bg-gradient-to-r from-cyan-500 to-blue-500
+items-center mx-auto px-4"> */}

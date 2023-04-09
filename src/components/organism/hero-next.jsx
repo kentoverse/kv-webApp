@@ -5,32 +5,11 @@ export default function HeroNext({ color, children }) {
 
   return (
     <>
-      <div className="kv-hero flex 
-        place-items-center 
-        before:absolute 
-        before:h-[300px] 
-        before:w-[480px] 
-        before:-translate-x-1/2 
-        before:rounded-full 
-        before:bg-gradient-radial 
-        before:from-white 
-        before:to-transparent 
-        before:blur-2xl 
-        before:content-[''] 
-        after:absolute 
-        after:-z-20 
-        after:h-[180px] 
-        after:w-[240px] 
-        after:translate-x-1/3 
-        after:bg-gradient-conic 
-        after:from-sky-200 
-        after:via-blue-200 
-        after:blur-2xl 
-        after:content-[''] 
-        before:dark:bg-gradient-to-br 
-        before:dark:from-transparent 
-        before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        
+      
+      <div className="hero
+      flex
+      place-items-center
+      ">
         
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
@@ -40,7 +19,6 @@ export default function HeroNext({ color, children }) {
           height={80}
           priority
         />
-
       </div>
 
 
@@ -48,3 +26,34 @@ export default function HeroNext({ color, children }) {
   )
 }
 
+
+
+{/* <div className="hero flex
+place-items-center
+before:absolute
+before:h-[300px] 
+before:w-[480px] 
+before:-translate-x-1/2 
+before:rounded-full 
+before:bg-gradient-radial 
+before:from-white 
+before:to-transparent 
+before:blur-2xl 
+before:content-[''] 
+after:absolute 
+after:-z-20 
+after:h-[180px] 
+after:w-[240px] 
+after:translate-x-1/3 
+after:bg-gradient-conic 
+after:from-sky-200 
+after:via-blue-200 
+after:blur-2xl 
+after:content-[''] 
+before:dark:bg-gradient-to-br 
+before:dark:from-transparent 
+before:dark:to-blue-700/10 
+after:dark:from-sky-900 
+after:dark:via-[#0141ff]/40 
+before:lg:h-[360px]"> */}
+  

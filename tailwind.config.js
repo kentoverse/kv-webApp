@@ -10,15 +10,7 @@ module.exports = {
       center: true,
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
-      },
       colors: {
-        primary: 'rgb(var(--color-primary) / <alpha-value>)',
-        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
         'gray': '#757575',
         'graylight': '#BDBDBD',
         'gold2': '#FFC107',
@@ -27,13 +19,15 @@ module.exports = {
         'magenta2': '#FF4081',
       },
       textColor: {
-        
-
-
-      },
+        'skin-base': 'rgb(var(--color-primary/<alpha-value>)',
+        'muted': 'rgb(var(--color-text-muted) / <alpha-value>)',
+        'inverted': 'rgb(var(--color-text-inverted) / <alpha-value>)'
     },
-    minHeight: {
-      '1/2': '90%',
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+      },
     },
   },
   plugins: [],

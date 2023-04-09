@@ -8,14 +8,13 @@ export default function Home() {
 
   return (
 
-    <>
+
       <MainKV>
-        <section className={`${true} bg-pink-800 grid grid-rows-1 grid-flow-col gap-2`}>
-          <article className="kvArticle">
+        <section className={`${true} bg-pink-200 grid grid-rows-3 grid-flow-col gap-2`}>
 
-            <h3>Section Row</h3>
+          <article className="">
 
-            <a href="#">Link to something</a>
+            <a href="#"> <h4>Section Row</h4></a>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
@@ -23,6 +22,12 @@ export default function Home() {
               Mauris eu placerat lorem. Integer aliquam ultrices sem ac luctus.
               Donec et porttitor lorem. Etiam lacinia dolor ut blandit malesuada.
             </p>
+
+          </article>
+
+          <article className="">
+            <a href="#"> <h4>Section Row</h4></a>
+
 
             <p>
               Nulla suscipit mauris justo, nec varius mi pulvinar eget.
@@ -33,6 +38,11 @@ export default function Home() {
               Nunc placerat orci velit, id consectetur turpis interdum vitae.
             </p>
 
+          </article>
+
+          <article className="">
+            <a href="#"> <h4>Section Row</h4></a>
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
@@ -41,12 +51,9 @@ export default function Home() {
               Donec et porttitor lorem. Etiam lacinia dolor ut blandit malesuada.
             </p>
 
-
           </article>
 
         </section>
-
-
 
         <footer className="footer w-full">
           <div className="grid grid-rows-2 grid-flow-col gap-2">
@@ -77,10 +84,6 @@ export default function Home() {
 
 
       </MainKV>
-
-
-
-    </>
 
 
   )

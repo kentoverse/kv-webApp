@@ -1,0 +1,22 @@
+{
+    "cards": [
+        {
+            "title": "Card 1?",
+            "subtitle": "Which one is correct team name in NBA?",
+            "href": "#",
+            "src": "/images/landscape/cross.jpg"
+        },
+        {
+            "title": "Card 2",
+            "subtitle": "Which one is correct team name in NBA?",
+            "href": "#",
+            "src": "/images/landscape/cross.jpg"
+        },
+        {
+            "title": "Card 3",
+            "subtitle": "Which one is correct team name in NBA?",
+            "href": "#",
+            "src": "/images/landscape/cross.jpg"
+        }
+    ]
+}
