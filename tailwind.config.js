@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     container: {
-      center: 'true',
+      center: true,
     },
     extend: {
       colors: {
@@ -19,7 +19,7 @@ module.exports = {
         'magenta2': '#FF4081',
       },
       textColor: {
-        'skin' : 'rgb(var(--color-primary/<alpha-value>)',
+        'skinbase' : 'rgb(var(--color-primary/<alpha-value>)',
         'muted' : 'rgb(var(--color-text-muted) / <alpha-value>)',
         'inverted' : 'rgb(var(--color-text-inverted) / <alpha-value>)',
     },
@@ -32,12 +32,6 @@ module.exports = {
   },
   plugins: [],
 }
-
-
-
-
-
-
 
 
 

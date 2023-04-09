@@ -27,13 +27,10 @@ zj
     }
   }
   
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // Initialize Analytics and get a reference to the service
 const analytics = getAnalytics(app);
-
-
 
 // process.env.FIREBASE_API_KEY
 // process.env.FIREBASE_AUTH_DOMAIN
