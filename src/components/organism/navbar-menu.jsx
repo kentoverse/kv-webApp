@@ -1,15 +1,16 @@
 
 import Link from "next/link"
 
-const pageRoutes = [
-  { name: 'bg-e', path: 'bg-r' },
-  { name: 'bg-e', path: 'bg-r' },
-  { name: 'bg-e', path: 'bg-r' },
-  { name: 'bg-e', path: 'bg-r' }
-]
 
-export default function NavbarMenu({ theme, number, label }) {
 
+export default function NavbarMenu(pageRoutes) {
+
+  pageRoutes = [
+    { name: 'Home', path: '/' },
+    { name: 'Dashboard', path: '/dashboard' },
+    { name: 'Project', path: '/dashboard/project' },
+    { name: 'Business', path: '/dashbaord/business' }
+  ]
 
   return (
  

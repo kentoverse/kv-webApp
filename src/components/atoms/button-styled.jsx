@@ -35,10 +35,10 @@ const ButtonClassName = props => (
   </button>
 )
 
-const theme = {
-  buttonColor: 'bg-gradient-to-r from-cyan-500 to-blue-500',
-  buttonSize: 'mx-auto px-4'
-}
+// const theme = {
+//   buttonColor: 'bg-gradient-to-r from-cyan-500 to-blue-500',
+//   buttonSize: 'mx-auto px-4'
+// }
 
 
 const ButtonInline = ({ label, theme }) => (

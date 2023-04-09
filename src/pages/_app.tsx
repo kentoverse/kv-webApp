@@ -3,22 +3,18 @@ import "@styles/globals.css"
 import type { AppProps } from 'next/app'
 import { useState } from 'react';
 
-console.log("FireBase-------->", process.env.FIREBASE_API_KEY);
-
+console.log("FireBase--->", process.env.FIREBASE_API_KEY);
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const [themeContext, setThemeContext] = useState('default');
-
-
 
   return (
-    <>
-      <HeaderKV theme={"theme-kv"}>
-        <Component {...pageProps} />
-      </HeaderKV>
-    </>
-
-
+  
+      <>
+      <HeaderKV />
+      <Component {...pageProps} />
+      </>
+  
+ 
   )
 }

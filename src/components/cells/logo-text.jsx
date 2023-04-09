@@ -3,16 +3,19 @@ import Image from "next/image"
 
 
 
-export default function LogoText({ site_title, site_description }) {
+export default function LogoText({title}) {
 
-    const siteTitle = "KENTOVERSE"
+    const siteTitle = title
 
     return (
     
             <div className="siteLogo">
                 <Image
                     src="/vercel.svg"
-                    alt="Logo" width={60} height={60} priority />
+                    alt="Logo" 
+                    width={60} height={60} 
+                    priority
+                />
 
                 <h2 className="text-skin-base text-3xl font-mono font-bold">
                     {siteTitle}

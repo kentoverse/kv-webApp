@@ -6,46 +6,52 @@ import { ButtonDynamic, ButtonInline } from "@components/atoms/button-styled"
 import ButtonTW from "@components/atoms/button-tw";
 
 
+
 const theme = {
     buttonColor: 'bg-gradient-to-r from-cyan-500 to-blue-500',
     buttonSize: 'mx-auto px-4'
 }
 
 
+export default function HeaderKV(props, { children }) {
 
-export default function HeaderKV(props, {children}) {
-
-    const { setTheme = "theme-bv", 
-            number = 3, 
-            label = 'Tailwind' } = props;
+    const { setTheme = `theme-kv`,
+        number = 3,
+        label = 'Tailwind' } = props;
 
     return (
         <>
-        <div className={`${setTheme}`}> 
-            <header className="header 
-                items-center mx-auto px-4">
+            <header className={`${setTheme}
+            bg-gradient-to-r from-cyan-500 to-blue-500`}>
 
+            <LogoText></LogoText>
+            <NavbarMenu></NavbarMenu>
+            <NavbarBottom></NavbarBottom>
+                
+                
                 <div className="wrapper">
-                <LogoText></LogoText>
-                <NavbarMenu></NavbarMenu>
-                <NavbarBottom></NavbarBottom>
                 </div>
 
-                <HeroNext></HeroNext>
-                <ButtonTW number={number} label={label} />
-                <ButtonDynamic>STYLED DYNAMIC</ButtonDynamic>
-                <ButtonInline theme={theme} label={"INLINE"} ></ButtonInline>
+
+            <HeroNext></HeroNext>
+
+            <ButtonTW number={number} label={label} />
+            <ButtonDynamic>STYLED DYNAMIC</ButtonDynamic>
+            <ButtonInline theme={theme} label={"INLINE"} ></ButtonInline>
             </header>
 
+          
             {children}
-        </div>
 
-        </>
+                </>
+           
     )
 }
 
 
+
+
 // ${inter.variable} 
-{/* <header className="header
+/* <header className="header
 bg-gradient-to-r from-cyan-500 to-blue-500
-items-center mx-auto px-4"> */}
+items-center mx-auto px-4"> */

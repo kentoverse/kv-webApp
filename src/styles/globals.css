@@ -2,47 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  /* :root {
+
+  :root {
     --color-primary: 105 115 179;
     --color-secondary: 111 114 185;
     --foreground-rgb: 20, 20, 20;
     --background-start-rgb: 15, 21, 91;
     --background-end-rgb: 15, 10, 20;
     --color-text-base: 255, 255, 255;
-  } */
+  }
 
   .theme-kv {
     --color-primary: 19, 10, 129;
-    --color-text-base: 19, 10, 129;
-    --color-text-muted: 254, 100, 202;
-    --color-text-inverted: 220, 38, 38;
+    --color-text-skin-base: 19, 10, 129;
   } 
 }
 
 @layer components {
 
-  .theme-kv
-  > .header {
+
+  .theme-kv {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    position: relative;
+    height: 40vh;
     margin: 0 auto;
-    padding: 3 rem;
-    background: linear-gradient(to right, #38b2ac, #3b82f6);
+    padding: 3rem;
   }
 
   .theme-kv
   > .navbar {
-    position: fixed;
+    position: absolute;
     opacity: 80%;
     height: 30px;
     top: 0; right: 0;
-    z-index: 50;
-    background-color: pink;
-    border: 1px solid red;
+    z-index: 0;
   }
 
   .navbar
@@ -74,38 +69,37 @@
     left: 0;
     z-index: 100;
     width: 30%; height: 40px;
-    background-color: theme('colors.gold3');
+    /* background-color: theme('colors.gold3'); */
     /* border: 1px solid rgba(var(--callout-border-rgb), 0.3);
     border-radius: var(--border-radius); */
   }
 
   .siteLogo 
-  > * {
-    text-align: left;
-    color: theme('textColor.base');
-    line-height: 40px;
+    > h2 {
+        text-align: left;
+        line-height: 40px;
+    }
+
+  .theme-kv
+    > .wrapper {
+        width: inherit;
+   }
+
+  .theme-kv
+    >.hero {
+      position: relative;
+      width: 100%;
+      padding-top: 0;
+      /* background-color: theme('colors.gold3'); */
   }
 
-  .theme-kv>.card {
-    background-color: theme('colors.gold1');
-    border-radius: theme('borderRadius.lg');
-    padding: theme('spacing.6');
-    box-shadow: theme('boxShadow.xl');
-  }
-
-  .theme-kv>.wrapper {
-    background-color: theme('colors.gold1');
-    width: 100%;
-    height: 50vh;
-  }
-
-  .theme-kv>.hero {
-    position: relative;
-    width: 100%;
-    padding-top: 0;
-    background-color: theme('colors.gold3');
-
-  }
+  .theme-kv
+    >.card {
+      background-color: theme('colors.gold1');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+}
 
   .button--default {
     @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover: bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
@@ -134,12 +128,12 @@
 }
 
 
+
 @layer utilities {
   .text-primary:hover {
     color: #007bff;
   }
 }
-
 
 
 @media (prefers-color-scheme: light) {
@@ -150,7 +144,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+
 }
+
 
 
 /* .next-theme {

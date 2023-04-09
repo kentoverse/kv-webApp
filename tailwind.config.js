@@ -19,7 +19,7 @@ module.exports = {
         'magenta2': '#FF4081',
       },
       textColor: {
-        'skin-base': 'rgb(var(--color-primary/<alpha-value>)',
+        'skin': 'rgb(var(--color-primary/<alpha-value>)',
         'muted': 'rgb(var(--color-text-muted) / <alpha-value>)',
         'inverted': 'rgb(var(--color-text-inverted) / <alpha-value>)'
     },

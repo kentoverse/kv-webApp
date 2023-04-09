@@ -8,9 +8,10 @@ export default function Home() {
 
   return (
 
+<MainKV>
 
-      <MainKV>
-        <section className={`${true} bg-pink-200 grid grid-rows-3 grid-flow-col gap-2`}>
+  
+        <section className={`${true} bg-pink-200 grid grid-rows-2 grid-flow-col gap-2`}>
 
           <article className="">
 
@@ -82,9 +83,7 @@ export default function Home() {
         </footer>
         <script src="script.js"></script>
 
-
-      </MainKV>
-
+        </MainKV>
 
   )
 }
@@ -92,7 +91,7 @@ export default function Home() {
 
 
 
-{/* <div clasName="grid grid-cols-4 gap-4" key={c.id}>
+/* <div clasName="grid grid-cols-4 gap-4" key={c.id}>
 {allData?.results.map(c =>
   <>
     <p>{c.name}</p>
@@ -102,4 +101,4 @@ export default function Home() {
   </>
 )};
 
-</div> */}
+</div> */
