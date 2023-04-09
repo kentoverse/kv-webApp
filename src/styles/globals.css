@@ -4,17 +4,26 @@
 
 @layer base {
   :root {
-    --color-primary: 105 115 179;
+    --color-primary: 255 115 179;
     --color-secondary: 111 114 185;
     --foreground-rgb: 20, 20, 20;
     --background-start-rgb: 15, 21, 91;
     --background-end-rgb: 15, 10, 20;
-    --color-text-base: 255, 255, 255;
+    --color-text-base: #ffffff;
+    --color-text-muted: #c7d2fe;
+    --color-text-inverted: #4f46e5;
+    --color-fill: #4338ca;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #eef2ff;
+    --color-button-muted: #6366f1;
   }
 
   .theme-kv {
-    --color-primary: 19, 10, 129;
-    --color-text-skinbase: 19, 10, 129;
+    --color-text-base: 255, 255, 255;
+    --color-secondary: 111 114 185;
+    --foreground-rgb: 20, 20, 20;
+    --background-start-rgb: 15, 21, 91;
+    --background-end-rgb: 15, 10, 20;
   } 
 }
 
@@ -48,9 +57,6 @@
   .navbar > ul > * {
       flex: 1;
       flex-basis: auto;
-      color: #a21919;
-      font-size: 18px;
-      font-weight: 600;
       padding-right: 10px;
   }
 
@@ -81,7 +87,6 @@
       position: relative;
       width: 100%;
       padding-top: 0;
-      /* background-color: theme('colors.gold3'); */
   }
 
   .theme-kv > .card {

@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 873;
-exports.ids = [873];
+exports.id = 153;
+exports.ids = [153];
 exports.modules = {
 
 /***/ 3453:
@@ -58,7 +58,7 @@ const useThemeContext = ()=>(0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(Th
 
 /***/ }),
 
-/***/ 8888:
+/***/ 2153:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -111,7 +111,7 @@ function MainKV({ children  }) {
 function HeaderKV({ children , theme  }) {
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/ jsx_runtime_.jsx("header", {
-            className: `${theme} first-letter:bg-gradient-to-r from-cyan-500 to-blue-500`,
+            className: `${theme} bg-gradient-to-r from-cyan-500 to-blue-500 items-center mx-auto px-4`,
             children: children
         })
     });
@@ -161,7 +161,7 @@ lg:p-4 lg:dark:bg-zinc-800/30"></h2> */
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-;// CONCATENATED MODULE: ./src/components/organism/navbar-menu.jsx
+;// CONCATENATED MODULE: ./src/components/organs/navbar-menu.jsx
 
 
 const pageRoutes = [
@@ -174,12 +174,12 @@ const pageRoutes = [
         path: "/dashboard"
     },
     {
-        name: "Project",
-        path: "/dashboard/project"
+        name: "About",
+        path: "/about-us"
     },
     {
-        name: "Business",
-        path: "/dashbaord/business"
+        name: "Project",
+        path: "/dashboard/project"
     }
 ];
 function NavbarMenu(props) {
@@ -194,7 +194,7 @@ function NavbarMenu(props) {
     });
 }
 
-;// CONCATENATED MODULE: ./src/components/organism/navbar-bottom.jsx
+;// CONCATENATED MODULE: ./src/components/organs/navbar-bottom.jsx
 
 
 function NavbarBottom(props) {
@@ -221,7 +221,7 @@ function NavbarBottom(props) {
     });
 }
 
-;// CONCATENATED MODULE: ./src/components/organism/hero-next.jsx
+;// CONCATENATED MODULE: ./src/components/organs/hero-next.jsx
 
 
 function HeroNext(props) {
@@ -329,7 +329,112 @@ const ButtonInline = ({ label , theme  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("
     });
 
 
+;// CONCATENATED MODULE: ./src/components/organs/card-group.tsx
+
+function CardGroup({ color , children  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: "mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left",
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    href: "#",
+                    className: "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                            className: `${true} mb-3 text-2xl font-semibold`,
+                            children: [
+                                "Docs",
+                                " ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: "inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none",
+                                    children: "->"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: `${true} m-0 max-w-[30ch] text-sm opacity-50`,
+                            children: "Find in-depth information about Next.js features and API."
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    href: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app",
+                    className: "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                            className: `${true} mb-3 text-2xl font-semibold`,
+                            children: [
+                                "Learn",
+                                " ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: "inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none",
+                                    children: "->"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: `${true} m-0 max-w-[30ch] text-sm opacity-50`,
+                            children: "Learn about Next.js in an interactive course with\xa0quizzes!"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    href: "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app",
+                    className: "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                            className: `${true} mb-3 text-2xl font-semibold`,
+                            children: [
+                                "Templates",
+                                " ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: "inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none",
+                                    children: "->"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: `${true} m-0 max-w-[30ch] text-sm opacity-50`,
+                            children: "Discover and deploy boilerplate example Next.js\xa0projects."
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app",
+                    className: "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                            className: `${true} mb-3 text-2xl font-semibold`,
+                            children: [
+                                "Deploy",
+                                " ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: "inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none",
+                                    children: "->"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: `${true} m-0 max-w-[30ch] text-sm opacity-50`,
+                            children: "Instantly deploy your Next.js site to a shareable URL with Vercel."
+                        })
+                    ]
+                })
+            ]
+        })
+    });
+}
+
 ;// CONCATENATED MODULE: ./src/pages/layout.tsx
+
 
 
 
@@ -365,6 +470,10 @@ function Layout({ children  }) {
                     })
                 ]
             }),
+            /*#__PURE__*/ jsx_runtime_.jsx(CardGroup, {
+                color: "",
+                children: undefined
+            }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MainKV, {
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
@@ -375,21 +484,21 @@ function Layout({ children  }) {
                                 className: "text-sm",
                                 children: [
                                     data.name,
-                                    " |",
+                                    ",",
                                     data.description,
-                                    " |",
+                                    ",",
                                     data.color.base,
-                                    " |",
+                                    ",",
                                     data.color.inverted,
-                                    " |",
+                                    ",",
                                     data.background.fill,
-                                    " |",
+                                    ",",
                                     data.background.image,
-                                    " |",
+                                    ",",
                                     data.button.action,
-                                    " |",
+                                    ",",
                                     data.button.success,
-                                    " |",
+                                    ",",
                                     data.button.size
                                 ]
                             })

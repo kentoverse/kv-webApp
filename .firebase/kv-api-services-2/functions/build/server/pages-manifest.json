@@ -1,11 +1,12 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/api/hello": "pages/api/hello.js",
   "/_error": "pages/_error.js",
-  "/dashboard/business": "pages/dashboard/business.html",
+  "/_document": "pages/_document.js",
+  "/about-us": "pages/about-us.html",
+  "/api/hello": "pages/api/hello.js",
+  "/dashboard": "pages/dashboard.html",
   "/dashboard/project": "pages/dashboard/project.html",
-  "/": "pages/index.html",
   "/layout": "pages/layout.html",
+  "/": "pages/index.html",
   "/404": "pages/404.html"
 }

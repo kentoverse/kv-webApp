@@ -17,6 +17,7 @@ module.exports = {
         'gold3' : '#FFA000',
         'gold1' : '#FFECB3',
         'magenta2': '#FF4081',
+        'skinbase' : 'rgb(var(--color-primary/<alpha-value>)',
       },
       textColor: {
         'skinbase' : 'rgb(var(--color-primary/<alpha-value>)',
