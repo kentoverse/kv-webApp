@@ -2,15 +2,18 @@
 
 export default function MainKV({
     children,
+    theme,
 }:{ children: React.ReactNode,
+    theme: string,
 }) {
 
   return (
     <>
 
-      <main className={`bg-pink-100 container md:container md:mx-auto`}>
+      <main className={`${theme}container md:container md:mx-auto`}>
 
         {children}
+
         <footer className="footer w-full">
           <div className="grid grid-rows-2 grid-flow-col gap-2">
             <p>
@@ -20,8 +23,6 @@ export default function MainKV({
               Mauris eu placerat lorem. Integer aliquam ultrices sem ac luctus.
               Donec et porttitor lorem. Etiam lacinia dolor ut blandit malesuada.
             </p>
-
-
           </div>
           <div>
             <p>

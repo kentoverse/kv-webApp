@@ -19,7 +19,7 @@ export default function Layout ({
     
      useEffect(() => {
         console.log("This is page: ", pageName);
-        setThemeId('theme-kv');
+        setThemeId('theme-no');
         setData(sampleTheme);
      }, []);
 
@@ -33,25 +33,25 @@ return (
             <HeroNext color={data.color} children={undefined}></HeroNext>
         </HeaderKV>
 
-        <CardGroup color={""} children={undefined}></CardGroup>
+        {/* <CardGroup color={""} children={undefined}></CardGroup> */}
 
-        <MainKV>
+        <MainKV theme={"theme-no"}>
+
+        {children}
 
             <p>Theme Details : {themeId}
+
             <span className="text-sm">
                 {data.name},{data.description},{data.color.base},{data.color.inverted},
                 {data.background.fill},{data.background.image},{data.button.action},
                 {data.button.success},{data.button.size} 
             </span></p>
 
-            <div className="noWrapper">
+            {/* <div className="noWrapper">
                     <ButtonDynamic>STYLED DYNAMIC</ButtonDynamic>
                     <ButtonInline theme={data.button} label={"INLINE"} ></ButtonInline>
-            </div>
-        
-        
-               {children}
-
+            </div> */}
+    
         </MainKV>
     </>
  )
@@ -59,7 +59,7 @@ return (
 
 export const sampleTheme =
     {
-        name: "theme-kv",
+        name: "theme-no",
         description: "nice theme by Marc",
         color: {
         base: "#f2340a",

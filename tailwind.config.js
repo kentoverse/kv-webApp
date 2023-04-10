@@ -1,34 +1,68 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
+  purge: [
+    './src/pages/**/*.{html,js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+  ],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     container: {
       center: true,
     },
-    extend: {
-      colors: {
-        'gray' : '#757575',
-        'graylight': '#BDBDBD',
-        'gold2' : '#FFC107',
-        'gold3' : '#FFA000',
-        'gold1' : '#FFECB3',
-        'magenta2': '#FF4081',
-        'skinbase' : 'rgb(var(--color-primary/<alpha-value>)',
-      },
-      textColor: {
-        'skinbase' : 'rgb(var(--color-primary/<alpha-value>)',
-        'muted' : 'rgb(var(--color-text-muted) / <alpha-value>)',
-        'inverted' : 'rgb(var(--color-text-inverted) / <alpha-value>)',
+    screens: {
+      'mobile': '640px', // => @media (min-width: 640px) { ... }
+      'tablet': '720px', // => @media (min-width: 640px) { ... }
+      'laptop': '1024px', // => @media (min-width: 1024px) { ... }
+      'desktop': '1280px', // => @media (min-width: 1280px) { ... }
     },
-      backgroundImage: {
-        'gradient-radial' : 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic' : 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern' : "url('/img/hero-pattern.svg')",
-      },
+    extend: {
+        colors: {
+          'gray1': '#757575',
+          'gray2': '#BDBDBD',
+          'gray3': '#BDBDBD',
+          'gold1': '#FFC107',
+          'gold2': '#FFA000',
+          'gold3': '#FFECB3',
+          'info': '#306cdb',
+          'success': '#34eb55',
+          'warning': '#db7d30',
+          'danger': '#cc2740',
+        },
+        textColor: {
+          skin: {
+            base: 'var(--color-text-base)',
+            muted: 'var(--color-text-muted)',
+            inverted: 'var(--color-text-inverted)'
+          }
+        },
+        letterSpacing: {
+          tighter: '-.05em',
+          wider: '.05em',
+          normal: '-.025em',
+        },
+        backgroundColor: {
+          skin: {
+            fill: 'var(--color-fill)',
+            'button-accent': 'var(--color-button-accent)',
+            'button-accent-hover': 'var(--color-button-accent-hover)',
+            'button-accent-muted': 'var(--color-button-accent-muted)',
+          }
+        },
+        gradientColorStops: {
+          skin: {
+            hue: 'var(--color-fill)',
+            'cyan-blue': 'var(--background-start-rgb)',
+          }
+        },
+        backgroundImage: {
+          'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'hero-pattern': "url('/img/hero-pattern.svg')"
+        },
     },
   },
   plugins: [],

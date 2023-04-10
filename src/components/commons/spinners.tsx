@@ -1,14 +1,11 @@
 import React from "react";
 
-
 export default function Spinner ({
   spin, 
   } : 
 {   spin: number,
     
 }) {
-
- 
 
   return (
     <>
@@ -34,6 +31,7 @@ export default function Spinner ({
     Loading...
 </button>
 )}
+
 
     </>
   )
