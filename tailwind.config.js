@@ -55,7 +55,7 @@ module.exports = {
         gradientColorStops: {
           skin: {
             hue: 'var(--color-fill)',
-            'cyan-blue': 'var(--background-start-rgb)',
+            'stops-from-to': '--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);',
           }
         },
         backgroundImage: {
