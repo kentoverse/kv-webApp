@@ -81,10 +81,6 @@ https://source.developers.google.com/p/kv-web-apps/r/kv-webapp-dev
 // authorized permission to folder
 sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 
-
-
-
-
 ## getInitialProps will be called on every client-side navigation, 
 ## if you'd like to only fetch data at build-time, switch to getStaticProps (see example code in 
 (libs/service)
