@@ -13,25 +13,28 @@ export function ButtonAccent({
     onClick: MouseEventHandler<any> | undefined,
     isLink: boolean,
     href: string | undefined
-}) {
-    return (
-    <>
-        {isLink ?
-                (<a href={href} role="button" aria-pressed="true"
-                className={`text-skin-inverted bg-skin-button-accent
-                hover:bg-skin-button-accent-hover flex items-center justify-center
-                px-4 py-3 border border-transparent text-base font-medium font-mono rounded-md shadow-sm sm:px-8`}>
-                {label}
-                </a>)
-                : (
-                <button onClick={onClick} type={type}
-                className={`text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover
-                flex items-center justify-center px-4 py-3 border border-transparent
-                text-base font-medium font-mono rounded-md shadow-sm sm:px-8`}>
-                {label}
-                </button>
-            )}
-    </>
+}){
+
+
+
+return (
+<>
+{isLink ?
+    (<a href={href} role="button" aria-pressed="true"
+        className={`text-skin-inverted bg-skin-button-accent
+        hover:bg-skin-button-accent-hover flex items-center justify-center
+        px-4 py-3 border border-transparent text-base font-medium font-mono rounded-md shadow-sm sm:px-8`}>
+        {label}
+    </a>)
+    : (
+    <button onClick={onClick} type={type}
+        className={`text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover
+        flex items-center justify-center px-4 py-3 border border-transparent
+        text-base font-medium font-mono rounded-md shadow-sm sm:px-8`}>
+        {label}
+    </button>
+)}
+</>
     )
 
 }
@@ -42,36 +45,46 @@ export function ButtonMuted({
     onClick,
     isLink = false,
     href
-}: {
+}:{
     type: 'submit' | 'reset' | 'button' | undefined,
     label: string,
     onClick: MouseEventHandler<any> | undefined,
     isLink: boolean,
     href: string | undefined,
 
-}) {
+}){
 
-    return (
-        <>
-            {isLink ?
-                (<a href={href} role="button" aria-pressed="true"
-                className={`text-skin-base bg-skin-button-muted
-                flex items-center justify-center px-4 py-3 border border-transparent
-                text-base font-medium font-mono rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8`}>
-                {label}
-                </a>)
-                :(
 
-                <button onClick={onClick} type={type}
-                className={`text-skin-base bg-skin-button-muted
-                flex items-center justify-center px-4 py-3 border border-transparent
-                text-base font-medium font-mono rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8`}>
-                {label}
-                </button>
-            )}
-        </>
-    )
+return (
+<>
+    {isLink ?
+        (<a href={href} role="button" aria-pressed="true"
+            className={`text-skin-base bg-skin-button-muted
+            flex items-center justify-center px-4 py-3 border border-transparent
+            text-base font-medium font-mono rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8`}>
+            {label}
+        </a>)
+        :(
+
+        <button onClick={onClick} type={type}
+            className={`text-skin-base bg-skin-button-muted
+            flex items-center justify-center px-4 py-3 border border-transparent
+            text-base font-medium font-mono rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8`}>
+            {label}
+        </button>
+    )}
+</>
+)
 }
+
+
+
+
+
+
+
+
+
 
 
 // export function ButtonAlert({

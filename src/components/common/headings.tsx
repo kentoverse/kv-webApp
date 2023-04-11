@@ -12,7 +12,8 @@ export default function Headings ({
     subheading : string,
 }){
 
-    return (
+
+return (
 <>
     <div className="">
         <h1 className="mb-4 text-3xl font-mono font-extrabold md:text-5xl lg:text-6xl 
@@ -44,7 +45,6 @@ export default function Headings ({
         </p>
     </div>
 </>
-
 )
 }
 

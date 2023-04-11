@@ -2,19 +2,19 @@ import { ReactPropTypes } from "react"
 
 
 
-
-
 export function CardInfo ({
     props,
     children
-}: {
+}:{
     props: ReactPropTypes,
     children: React.ReactNode,
-}) {
+}){
 
-    //RESPONSIVE
-    return (
-        <>
+
+
+//RESPONSIVE
+return (
+<>
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="md:flex">
             <div className="md:flex-shrink-0">
@@ -30,7 +30,7 @@ export function CardInfo ({
         </div>
     </div>
 
-        </>
-    )
+</>
+)
 }
 

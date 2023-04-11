@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 888;
-exports.ids = [888,777];
+exports.ids = [888,484];
 exports.modules = {
 
 /***/ 9212:
@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(108);
 /* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _libs_store_ThemeContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3453);
-/* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2153);
+/* harmony import */ var _site_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8395);
 
 
 
@@ -26,7 +26,7 @@ console.log("FireBase--->", process.env.FIREBASE_API_KEY);
 function App({ Component , pageProps  }) {
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_libs_store_ThemeContext__WEBPACK_IMPORTED_MODULE_2__/* .ThemeContextProvider */ .ze, {
-            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_site_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
                     ...pageProps
                 })
@@ -219,14 +219,6 @@ module.exports = require("react");
 "use strict";
 module.exports = require("react/jsx-runtime");
 
-/***/ }),
-
-/***/ 9816:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("styled-jsx/style");
-
 /***/ })
 
 };
@@ -236,7 +228,7 @@ module.exports = require("styled-jsx/style");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [636,954,153], () => (__webpack_exec__(9212)));
+var __webpack_exports__ = __webpack_require__.X(0, [636,675,781,395], () => (__webpack_exec__(9212)));
 module.exports = __webpack_exports__;
 
 })();

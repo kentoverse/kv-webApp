@@ -6,7 +6,7 @@
   "/api/hello": "pages/api/hello.js",
   "/dashboard": "pages/dashboard.html",
   "/dashboard/project": "pages/dashboard/project.html",
-  "/layout": "pages/layout.html",
   "/": "pages/index.html",
+  "/site-layout": "pages/site-layout.html",
   "/404": "pages/404.html"
 }

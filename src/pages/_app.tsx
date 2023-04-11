@@ -1,7 +1,7 @@
 import "@styles/globals.css";
 import type { AppProps } from 'next/app';
 import { ThemeContextProvider } from '../libs/store/ThemeContext';
-import Layout from './main-layout';
+import Layout from './site-layout';
 import StyledJsxRegistry from "@styles/registry";
 
 
@@ -12,13 +12,14 @@ export default function App({ Component, pageProps } : AppProps) {
 
   return (
     <>
-    {/* <StyledJsxRegistry>       */}
+      
       <ThemeContextProvider>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ThemeContextProvider>
-      {/* </StyledJsxRegistry> */}
+
+ 
     </>
   )
 }
