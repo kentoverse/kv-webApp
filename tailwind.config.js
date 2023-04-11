@@ -32,6 +32,10 @@ module.exports = {
           'warning': '#db7d30',
           'danger': '#cc2740',
         },
+        fontFamily: {
+          sans: ['var(--font-inter)'],
+          mono: ['var(--font-roboto-mono)'],
+        },
         textColor: {
           skin: {
             base: 'var(--color-text-base)',

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <> 
 
-      <section className={`bg-pink-200 grid grid-rows-2 grid-flow-col gap-2`}>
+      <section className={`bg-pink-100 grid grid-rows-2 grid-flow-col gap-2 px-6 py-8`}>
 
           <article className="text-md color-indigo-200">
 

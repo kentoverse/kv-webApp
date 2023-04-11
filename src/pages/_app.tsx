@@ -1,8 +1,9 @@
 import "@styles/globals.css";
 import type { AppProps } from 'next/app';
 import { ThemeContextProvider } from '../libs/store/ThemeContext';
-import Layout from './layout';
+import Layout from './main-layout';
 import StyledJsxRegistry from "@styles/registry";
+
 
 console.log("FireBase--->", process.env.FIREBASE_API_KEY);
 

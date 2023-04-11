@@ -107,6 +107,8 @@ sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 
 - Typescript Cheatsheet (https://www.codecademy.com/learn/learn-typescript/modules/learn-typescript-advanced-object-types/cheatsheet)
 
+- Tailwind Channel
+(https://www.youtube.com/@TailwindLabs)
 - Tailwind Inline Variabke 
 https://v2.tailwindcss.com/docs/just-in-time-mode
 

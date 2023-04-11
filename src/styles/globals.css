@@ -54,7 +54,7 @@
 
 @layer components {
 
-  .theme-kv {
+  /* .theme-kv {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,20 +86,6 @@
     padding-right: 10px;
   }
 
-  .theme-kv>.siteLogo {
-    position: absolute;
-    display: flex;
-    gap: 0.75em;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 30%;
-    height: 40px;
-    /* background-color: theme('colors.gold3'); */
-    /* border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-    border-radius: var(--border-radius); */
-  }
-
   .siteLogo>h2 {
     text-align: left;
     line-height: 40px;
@@ -119,7 +105,7 @@
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
     box-shadow: theme('boxShadow.xl');
-  }
+  } */
 
   /* .alert-link--success {
     @apply text-black bg-gradient-to-r font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;

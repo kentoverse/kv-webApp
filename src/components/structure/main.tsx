@@ -1,22 +1,29 @@
 
 
-export default function MainKV({
-    children,
-    theme,
-}:{ children: React.ReactNode,
-    theme: string,
+export default function Main({
+  children,
+  theme,
+  fontSans,
+  fontMono,
+}: {
+  children: React.ReactNode,
+  theme: string,
+  fontSans: string,
+  fontMono: string,
 }) {
 
   return (
     <>
 
-      <main className={`${theme}container md:container md:mx-auto`}>
-
+      <main className={`${theme} ${fontSans} ${fontMono}
+      container md:container md:mx-auto
+      bg-pink-100 
+      `}>
         {children}
 
-        <footer className="footer w-full">
-          <div className="grid grid-rows-2 grid-flow-col gap-2">
-            <p>
+        <footer className="w-100 grid grid-col-3 gap-2">
+          <div>
+            <p className="text-gray font-medium font-mono">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
               Mauris nisl ligula, fermentum vel massa a, tempus malesuada nunc.
@@ -25,7 +32,7 @@ export default function MainKV({
             </p>
           </div>
           <div>
-            <p>
+            <p className="text-gray font-medium font-mono">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
               Mauris nisl ligula, fermentum vel massa a, tempus malesuada nunc.
@@ -34,8 +41,9 @@ export default function MainKV({
             </p>
           </div>
           <div>
-            <p>&copy; 2023 My Website</p>
+            <p className="text-gray font-medium font-mono">&copy; 2023 My Website</p>
           </div>
+
         </footer>
         {/* <script src="script.js"></script> */}
       </main>
