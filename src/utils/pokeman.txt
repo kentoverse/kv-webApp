@@ -1,0 +1,113 @@
+import { useState } from 'react';
+import axios from 'axios';
+import { QueryClient, UseQueryOptions, useQuery} from 'react-query';
+import { queryClient } from '../../_app';
+import Image from 'next/image';
+
+interface Pokemon {
+    id: number;
+    name: {
+        english: string;
+    };
+    type: string[];
+}
+
+
+
+const getPokemon = async () => {
+    const res = await fetch('/api/search');
+   
+    // const pokemon = await data.json(); 
+    console.log('data pokeman -- ', res);
+
+    return res.json();
+}
+
+
+
+
+export default async function Pokeman() {
+
+    const pokemon = await getPokemon();
+
+//     const [query, setQuery] = useState("");
+
+//     const { isLoading, isError, data, error } = useQuery(
+//         ["q", query], getPokemon
+
+//     // async () => {
+//     //     const pokemon = await getPokemon("q", query)
+//     //     return pokemon;
+//     //     }
+
+
+//     );
+    
+
+    // const [filteredResults, setFilteredResults] = useState<Pokemon[]>([]);
+
+    // if (isLoading) return <div>Loading...</div>;
+    // if (isError) return <div>Error: </div>;
+
+    // console.log('data pokeman -- ', data);
+
+    // const filter: string = query ? query.toString() : '';
+
+    // const { data } = useQuery(["q", filter], () => getPokemon("q", filter), {
+    //     // Pass the queryClient instance as an option
+    //     client: queryClient,
+    //   } as QueryOptionsWithClient<Pokemon[], unknown> );
+
+
+    //   const [results, setResults] = useState([]);
+
+
+    // async function handleSearch() {
+    //     const data = await getPokemon('q', query);
+    //     setFilteredResults(data);
+    // }
+
+
+
+
+    return (
+        <>
+
+            <div className="flex">
+
+                {/* <input
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    className="bg-black text-white h-8 rounded-lg px-3
+                border-4 border-blue-800 border-opacity-100
+            "/> */}
+
+            
+                {/* <button className="h-8 px-3 ml-3 bg-red-700 text-white font-bold font-sans" onClick={handleSearch}>
+                    Search
+                </button> */}
+
+               
+                    <ul>
+                        { pokemon.map(({data} : {data: Pokemon}) => (
+
+                            <li key={data.id}>
+
+                                <h1>{data.name.english}</h1>
+                                <p>Types: {data.type.join(', ')}</p>
+                            </li>
+                        ))};
+                    </ul>
+              
+          
+            </div> 
+       
+        </>
+
+    );
+
+
+}

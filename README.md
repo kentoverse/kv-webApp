@@ -28,8 +28,6 @@ Dependencies
 
 
 
-
-
 ## Start Local Development
 
 ```bash ( Open project in IDE )
@@ -89,13 +87,10 @@ sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 ### References
 # NextJS 
 - Next JS Documentation (https://nextjs.org/docs)
-
 - NextJS Beta (https://beta.nextjs.org/docs/upgrade-guide)
-
-- NextJS Data Fetching Client- getInitialProps while Build Time - getStaticProps
-(https://nextjs.org/docs/advanced-features/static-html-export)
-
- https://nextjs.org/docs/advanced-features/static-html-export#getinitialprops !Caveats
+- NextJS Data Fetching Client- getInitialProps while Build Time -    
+  getStaticProps - (https://nextjs.org/docs/advanced-features/static-html-export)
+  Caveats - https://nextjs.org/docs/advanced-features/static-html-export#getinitialprops
 
 - NextJS VSCode Extention (https://marketplace.visualstudio.com/items?itemName=IbrahimCesar.ibrahimcesar-nextjs-developer-pack)
 
@@ -109,6 +104,7 @@ sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 https://v2.tailwindcss.com/docs/just-in-time-mode
 
 #UI Dev
+-  Chakra UI - (https://chakra-ui.com)
 
 - Styled JSX (https://github.com/vercel/styled-jsx)
 

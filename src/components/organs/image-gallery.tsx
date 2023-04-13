@@ -1,6 +1,11 @@
+import { ReactPropTypes } from "react";
 
-export default function HeroNext(props) {
-  
+export default function ImageGroup ({ 
+    props, 
+    children
+}:{  props : ReactPropTypes, 
+    children : React.ReactNode,
+}){
     return (
       <>
 

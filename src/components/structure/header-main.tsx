@@ -4,24 +4,26 @@ import { ReactPropTypes } from "react"
 
 export function Header ({
     children,
-    theme,
-    fontSans,
-    fontMono,
+    theme, 
+    font,
 }:{
     children: React.ReactNode,
     theme: string,
-    fontSans: string,
-    fontMono: string,
+    font: 'roboto.variable' | string,
 }){
 
 
 
 return (
 <>
-    <header className={`${theme} ${fontSans} ${fontMono}
+    <header className={`${font && font  } ${theme}
     w-full mx-auto items-center justify-center h-[380px]
     bg-gradient-to-r from-gray-800 to-gray-100
-    `}>  
+`}>
+
+
+{/* 
+<div className={ size === 'lg' ? 'mt-[22px]' : 'mt-[17px]' }></div> */}
 
 {children}
 
@@ -55,7 +57,7 @@ return (
 {children}
 
         <footer className="w-100 grid grid-col-3 gap-2">
-        <div>
+        {/* <div>
             <p className="text-gray font-medium font-mono">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Suspendisse justo est, finibus et pulvinar non, tempus eu ligula.
@@ -75,7 +77,7 @@ return (
         </div>
         <div>
             <p className="text-gray font-medium font-mono">&copy; 2023 My Website</p>
-        </div>
+        </div> */}
 
         </footer>
         {/* <script src="script.js"></script> */}

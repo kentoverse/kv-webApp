@@ -24,7 +24,6 @@ export default function NavbarBottom(props) {
         alt="Vercel Logo"
         className="dark:invert"
         width={120}
-        height={24}
         priority
       />
       </a>

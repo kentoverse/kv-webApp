@@ -4,7 +4,7 @@ import { useThemeContext } from '../libs/store/ThemeContext';
 import { useEffect } from 'react';
 import { HeroNext} from "@components/structure/hero-banners";
 import { CardGroupRow } from "@components/structure/grid-items";
-import {Header, Main} from '@components/structure/page-containers';
+import {Header, Main} from '@components/structure/header-main';
 import { NavbarFooter, NavbarMenu, NavbarSiteLogo } from "@components/structure/navigation-items";
 
 const inter = Inter({
@@ -38,7 +38,7 @@ export default function SiteLayout ({
 return (
 <>
   
-        <Header theme={data.name} fontSans={inter.variable} fontMono={roboto.variable}>
+        <Header theme={data.name} font={roboto.variable}>
             
             <HeroNext></HeroNext>
             <NavbarSiteLogo children={undefined} isSiteTitleHidden={true}></NavbarSiteLogo>
@@ -69,6 +69,7 @@ return (
 </>
 )
 }
+
 
 
 export const sampleTheme =
