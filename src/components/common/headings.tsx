@@ -17,24 +17,30 @@ return (
 
     <h1 className="font-sans font-black text-skin-base 
     text-4xl sm:text-5xl md:tet-7xl ">
+
         {heading1}
+        <br></br>
+        {heading2}
+        <br></br>
+        {heading3}
+
     </h1>
 
-    <h1 className="font-sans font-black text-skin-base
+            {/* <h1 className="font-sans font-black text-skin-base
     text-5xl sm:text-6xl md:tet-8xl ">
         {heading2}
 
-    </h1>
+    </h1> */}
 
-    <h1 className="font-sans font-black text-skin-base
+            {/* <h1 className="font-sans font-black text-skin-base
     text-4xl sm:text-5xl md:tet-7xl ">
         {heading3}
-    </h1>
+    </h1> */}
 
-    <p className="font-mono font-normal text-xs text-skin-muted leading-4 px-4 
+            <p className="font-mono font-normal text-xs text-skin-muted leading-4 px-4 
         md:text-sm md:w-80 md:text-left md:pl-0">
-        {subheading}
-    </p>
+                {subheading}
+            </p>
 
 </>
 )

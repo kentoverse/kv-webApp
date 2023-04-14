@@ -1,22 +1,69 @@
 { 
     "cards": [
         {
-            "title": "Card 1?",
-            "subtitle": "Which one is correct team name in NBA?",
+            "id": 1,
+            "title": "Docs",
+            "description": "Find in-depth information about Next.js features and API",
             "href": "#",
-            "src": "/images/landscape/cross.jpg"
+            "src": "/img/icons/cross.png"
         },
         {
-            "title": "Card 2",
-            "subtitle": "Which one is correct team name in NBA?",
+            "id": 2,
+            "title": "Learn",
+            "description": "Learn about Next.js in an interactive course with&nbsp;quizzes!",
             "href": "#",
-            "src": "/images/landscape/cross.jpg"
+            "src": "/img/icons/cross.png"
         },
         {
-            "title": "Card 3",
-            "subtitle": "Which one is correct team name in NBA?",
+            "id": 3,
+            "title": "Template",
+            "description": "Discover and deploy boilerplate example Next.js&nbsp;projects.",
             "href": "#",
-            "src": "/images/landscape/cross.jpg"
+            "src": "/img/icons/cross.png"
+        }
+    ],
+
+    "banners": [
+        {
+            "id": 1,
+            "heading": "Focus on your Website",
+            "subtitle": "Find in-depth information about Next.js features and API",
+            "button-label": "Submit",
+            "href": "#",
+            "src": "/img/icons/cross.png"
+        },
+        {
+            "id": 2,
+            "heading": "Focus on your Website",
+            "subtitle": "Learn about Next.js in an interactive course with&nbsp;quizzes!",
+            "button-label": "Submit",
+            "href": "#",
+            "src": "/img/icons/cross.png"
+        },
+        {
+            "id": 3,
+            "heading": "Focus on your Websitelate",
+            "subtitle": "Discover and deploy boilerplate example Next.js&nbsp;projects.",
+            "button-label": "Submit",
+            "href": "#",
+            "src": "/img/icons/cross.png"
+        }
+    ],
+
+    "data": [
+
+        {
+            "id": 1,
+            "name": "ab",
+            "description": "this is it no 1111...."
+        },
+
+        {
+            "id": 2,
+            "name": "cd",
+            "description": "this is it no 2222...."
         }
     ]
 }
+
+

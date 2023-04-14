@@ -2,10 +2,10 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import { useThemeContext } from '../libs/store/ThemeContext';
 import { useEffect } from 'react';
-import { HeroNext } from "@components/structure/heroes";
-import { CardGroupRow } from "@components/structure/group-items";
-import { Header, Main } from '@components/structure/header-main';
-import { NavbarFooter, NavbarMenu, NavbarSiteLogo } from "@components/structure/nav-items";
+import { HeroNext } from "@components/template/heroes";
+import { CardGroupRow } from "@components/template/group-items";
+import { Header, Main } from '@components/template/header-main';
+import { NavbarFooter, NavbarMenu, NavbarSiteLogo } from "@components/template/nav-items";
 
 const inter = Inter({
     variable: '--font-inter',
@@ -27,12 +27,14 @@ export default function SiteLayout({
 }){
 
     // const path = usePathname().slice(1);
-    const testPage = usePathname().replace("/dashboard/exp/", "");
+    const testPage : any = usePathname()?.replace("/dashboard/fetch/", "");
     const { themeId, setThemeId, data, setData } = useThemeContext();
 
-    useEffect(() => {
+    console.log("useRouter obj ---", )
 
-    console.log("This is page: - ", testPage);
+
+    useEffect(() => {
+        console.log("This is page: - ", testPage);
 
     setThemeId('theme-mo');
     setData(sampleTheme);
@@ -48,9 +50,11 @@ export default function SiteLayout({
                 <HeroNext></HeroNext>
                 <NavbarSiteLogo isSiteTitleHidden={true}></NavbarSiteLogo>
                 <NavbarMenu></NavbarMenu>
-                <NavbarFooter></NavbarFooter>
+               
 
             </Header>
+
+            <NavbarFooter></NavbarFooter>
 
             <span className="text-xs text-gray-400 font-mono">Themes // {data.name},{data.description},
                 {data.color.base},{data.color.inverted}, {data.background.fill},{data.background.image},

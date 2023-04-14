@@ -113,3 +113,9 @@ https://v2.tailwindcss.com/docs/just-in-time-mode
 - Image Sample (https://unsplash.com/s/photos/product)
 - Types (https://blog.logrocket.com/comparing-typescript-and-proptypes-in-react-applications)
 
+
+331 x 372px - marco
+128 x 128
+132 x 132
+140 x 140
+
