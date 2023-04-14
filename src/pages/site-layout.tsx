@@ -2,10 +2,10 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import { useThemeContext } from '../libs/store/ThemeContext';
 import { useEffect } from 'react';
-import { HeroNext} from "@components/structure/hero-banners";
-import { CardGroupRow } from "@components/structure/grid-items";
-import {Header, Main} from '@components/structure/header-main';
-import { NavbarFooter, NavbarMenu, NavbarSiteLogo } from "@components/structure/navigation-items";
+import { HeroNext } from "@components/structure/heroes";
+import { CardGroupRow } from "@components/structure/group-items";
+import { Header, Main } from '@components/structure/header-main';
+import { NavbarFooter, NavbarMenu, NavbarSiteLogo } from "@components/structure/nav-items";
 
 const inter = Inter({
     variable: '--font-inter',
@@ -20,55 +20,61 @@ const roboto = Roboto_Mono({
 });
 
 
-export default function SiteLayout ({
-    children }: {
-        children: React.ReactNode,
-    }) {
-    const pageName = usePathname().slice(1);
+export default function SiteLayout({
+    children 
+}:{
+    children: React.ReactNode,
+}){
+
+    // const path = usePathname().slice(1);
+    const testPage = usePathname().replace("/dashboard/exp/", "");
     const { themeId, setThemeId, data, setData } = useThemeContext();
 
     useEffect(() => {
-        console.log("This is page: ", pageName);
-        setThemeId('theme-mo');
-        setData(sampleTheme);
+
+    console.log("This is page: - ", testPage);
+
+    setThemeId('theme-mo');
+    setData(sampleTheme);
     }, []);
 
 
+    return (
+        <>
+            {/* { path != ('dashboard/exp') ? ( */}
 
-return (
-<>
-  
-        <Header theme={data.name} font={roboto.variable}>
-            
-            <HeroNext></HeroNext>
-            <NavbarSiteLogo children={undefined} isSiteTitleHidden={true}></NavbarSiteLogo>
-            <NavbarMenu children={undefined}></NavbarMenu>
-            <NavbarFooter children={undefined}></NavbarFooter>
-            
-        </Header>
+            <Header theme={data.name} hide={testPage} fontSans={inter.variable} fontMono={roboto.variable}>
+
+                <HeroNext></HeroNext>
+                <NavbarSiteLogo isSiteTitleHidden={true}></NavbarSiteLogo>
+                <NavbarMenu></NavbarMenu>
+                <NavbarFooter></NavbarFooter>
+
+            </Header>
+
+            <span className="text-xs text-gray-400 font-mono">Themes // {data.name},{data.description},
+                {data.color.base},{data.color.inverted}, {data.background.fill},{data.background.image},
+                {data.button.action}, {data.button.success},{data.button.size}
+            </span>
 
 
-        <CardGroupRow fontSans={inter.variable} fontMono={roboto.variable} theme={data.name} children={undefined} />
+
+            <CardGroupRow theme={data.name} hide={testPage} fontSans={inter.variable} fontMono={roboto.variable} />
 
 
-        <Main theme={data.name} fontSans={inter.variable} fontMono={roboto.variable}>
+            <Main theme={data.name} hide={""} fontSans={inter.variable} fontMono={roboto.variable}>
 
-{children}
+            {children}
 
-        {/* // Section */}
-            <p className="text-gold2 rounded-md p-3 font-mono">Theme Details : {themeId}
-                <span className="text-sm">
-                    {data.name},{data.description},{data.color.base},{data.color.inverted},
-                    {data.background.fill},{data.background.image},{data.button.action},
-                    {data.button.success},{data.button.size}
-                </span>
-            </p>
+            </Main>
 
-        </Main>
-  
-</>
-)
+          
+        </>
+    )
 }
+
+
+
 
 
 

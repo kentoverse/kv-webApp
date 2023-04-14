@@ -1,12 +1,16 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/about-us": "pages/about-us.html",
   "/api/hello": "pages/api/hello.js",
+  "/dashboard/exp/test": "pages/dashboard/exp/test.html",
   "/dashboard": "pages/dashboard.html",
   "/dashboard/project": "pages/dashboard/project.html",
   "/": "pages/index.html",
   "/site-layout": "pages/site-layout.html",
+  "/_error": "pages/_error.js",
+  "/api/search": "pages/api/search.js",
+  "/dashboard/exp/context": "pages/dashboard/exp/context.html",
+  "/dashboard/exp/pokedex": "pages/dashboard/exp/pokedex.js",
   "/404": "pages/404.html"
 }
