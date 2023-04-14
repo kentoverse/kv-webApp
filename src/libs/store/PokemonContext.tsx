@@ -19,7 +19,10 @@ export async function getServerSideProps() {
 
 
 const usePokemonController = (pokemon: Pokemon[]) => {
+
   const [filter, setFilter] = useState("");
+
+  // pokemon.slice(0, 20);
   
 //   pokemon = [
 //     { id: 0, name: '',  image: ''}
@@ -27,7 +30,7 @@ const usePokemonController = (pokemon: Pokemon[]) => {
 
   const filteredPokemon = useMemo(
     () =>
-      pokemon?.filter((p) =>
+      pokemon?.slice(0,20).filter((p) =>
         p.name.toLowerCase().includes(filter.toLowerCase())
       ),
     [filter, pokemon]

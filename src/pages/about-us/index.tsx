@@ -1,7 +1,6 @@
 import React from 'react'
-import HeroCall2Action from "@components/organs/hero-call2action";
-import {AlertLink } from "@components/common/alerts";
-import { ButtonAccent, ButtonMuted } from "@components/common/buttons";
+import { BannerCall2Action } from "@components/template/heroes";
+
 
 import kvFont from 'next/font/local';
 
@@ -11,11 +10,11 @@ const myFont = kvFont({
 });
 
 
-
 export default function AboutUs ({
-  children, 
+    children, 
 }:{ children : React.ReactNode,
 }){
+
 
   const size = 'lg';
 return ( 
@@ -47,7 +46,7 @@ isLink={false} href={undefined}></ButtonAlert> */}
 <div>{children}</div>
 
 
-<HeroCall2Action></HeroCall2Action>
+<BannerCall2Action></BannerCall2Action>
 
   </>
 

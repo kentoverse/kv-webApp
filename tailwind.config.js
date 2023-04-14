@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
+  darkMode: "class",
   purge: [
     './src/pages/**/*.{html,js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
@@ -9,15 +10,23 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
+  screens: {
+    'tablet': '960px', 
+    'desktop': '1248px',
+  },
+  colors: {
+    'white': '#FFFFFF',
+    'purple': '#3F3CBB',
+    'midnight': '#121063',
+    'metal': '#565584',
+    'tahiti-blue': '#3AB7BF',
+    'cool-white': '#ECEBFF',
+    'bubble-gum': '#FF77E9',
+    'copper-rust': '#78DCCA',
+  },
   theme: {
     container: {
       center: true,
-    },
-    screens: {
-      'mobile': '640px', // => @media (min-width: 640px) { ... }
-      'tablet': '720px', // => @media (min-width: 720px) { ... }
-      'laptop': '1024px', // => @media (min-width: 1024px) { ... }
-      'desktop': '1280px', // => @media (min-width: 1280px) { ... }
     },
     extend: {
         colors: {
@@ -27,14 +36,20 @@ module.exports = {
           'gold1': '#FFC107',
           'gold2': '#FFA000',
           'gold3': '#FFECB3',
-          'info': '#306cdb',
-          'success': '#34eb55',
-          'warning': '#db7d30',
-          'danger': '#cc2740',
+          'gold5': '#cc9933',
+          'mint5': '#cc9933',
+          'neon5': '#ccff66',
+          'pink5': '#ff3399',
+          'purple5': '#ff33ff',
         },
         fontFamily: {
           sans: ['var(--font-inter)'],
           mono: ['var(--font-roboto-mono)'],
+        },
+        letterSpacing: {
+          tighter: '-.05em',
+          wider: '.05em',
+          normal: '-.025em',
         },
         textColor: {
           skin: {
@@ -42,11 +57,6 @@ module.exports = {
             muted: 'var(--color-text-muted)',
             inverted: 'var(--color-text-inverted)'
           }
-        },
-        letterSpacing: {
-          tighter: '-.05em',
-          wider: '.05em',
-          normal: '-.025em',
         },
         backgroundColor: {
           skin: {
@@ -66,7 +76,7 @@ module.exports = {
           'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
           'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'hero-pattern': "url('/img/hero-pattern.svg')"
-        },
+        }, 
     },
   },
   plugins: [],

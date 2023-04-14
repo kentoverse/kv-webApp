@@ -13,8 +13,10 @@ return (
   <>
   <ul className='flex gap-4'>
     <li>
-        <Link className="text-lg text-pink-600 font-bold font-monot bg-gray-400 px-4 py-2" 
-            href="/dashboard/exp/pokedex">Pokedex
+        <Link className="text-lg font-bold font-monot px-4 py-2
+        bg-gray-400 text-pink-600
+        " 
+        href="/dashboard/exp/pokedex">Pokedex
         </Link>
       
     </li>

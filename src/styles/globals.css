@@ -58,7 +58,7 @@
 }
 
 @layer utilities {
-
+/* 
   .text-primary:hover {
     color: #007bff;
   }
@@ -86,7 +86,7 @@
     .desktop\:text-center {
       text-align: center
     }
-  }
+  } */
 }
 
 
