@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import { usePokemon } from "../../../libs/store/PokemonContext";
-import { DarkToggele } from "../../../components/test";
+import { DarkToggele } from "../../../components/_test";
 export { getServerSideProps } from "../../../libs/store/PokemonContext";
 
 

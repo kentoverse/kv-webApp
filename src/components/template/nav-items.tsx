@@ -10,7 +10,7 @@ const pageRoutes = [
 ]
 
 
-export function NavbarMenu({
+export function NavMenu({
 
 }: {
     }) {
@@ -41,7 +41,7 @@ export function NavbarMenu({
 }
 
 
-export function NavbarFooter({
+export function NavFloater({
 
 }: {
 
@@ -91,7 +91,7 @@ export function NavbarFooter({
 
 
 
-export function NavbarSiteLogo({
+export function NavLogo ({
     isSiteTitleHidden,
 }: {
     isSiteTitleHidden: boolean

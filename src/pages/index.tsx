@@ -10,7 +10,6 @@ export default function Home() {
       <section className="w-auto px-14 my-20
       md:px-28 lg:px-44
       ">
-
         <h2 className='font-sans font-extralight text-3xl pb-3 text-center text-skin-muted
           md:text-5xl md:px-16 md:pb-8'>
           Digital Transformation Journey
@@ -60,8 +59,6 @@ export default function Home() {
 
           </article>
         </div>
-
-
       </section>
 
     </>

@@ -2,25 +2,23 @@ import Link from "next/link"
 import { ReactPropTypes } from "react"
 
 
-
 export function TestingA({}) {
 
-  return (
-    <>
-      <div className="flex justify-between">
-        <Link className="font-sans font-bold text-sm 
-            bg-blue-800 text-white  px-3 py-2" href="/">Home</Link>
-        <h3 className="font-sans font-bold text-sm 
-            bg-pink-100 text-gray-400 px-3 py-2">TEST PAGE</h3>
-      </div>
+return (
+<>
+    <div className="flex justify-between">
+      <Link className="font-sans font-bold text-sm 
+          bg-blue-800 text-white  px-3 py-2" href="/">Home</Link>
+      <h3 className="font-sans font-bold text-sm 
+          bg-pink-100 text-gray-400 px-3 py-2">TEST PAGE</h3>
+    </div>
 
-      <div className="bg-gray-100 w-full position-relative h-[100vh]">
-      </div>
+    <div className="bg-gray-100 w-full position-relative h-[100vh]">
+    </div>
 
-    </>
-  )
+</>
+)
 }
-
 
 
 
