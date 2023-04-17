@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import { ButtonAccent } from "@components/common/buttons";
-import Headings from "@components/common/headings";
+import { ButtonAccent } from "@components/cells/buttons";
+import Headings from "@components/cells/headings";
 
 
 export function HeroNext({ }: {}) {

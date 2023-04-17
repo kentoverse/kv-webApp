@@ -1,25 +1,28 @@
-import { ReactPropTypes } from "react"
-
-
+import { ReactPropTypes, FC } from "react"
 
 
 
 export default function _Copy ({ 
-     props, 
-     children
+  props, 
+  children
 }:{  props : ReactPropTypes, 
-     children : React.ReactNode,
+  children : React.ReactNode,
 }){
-    return (
-      <>
-      
-      
-          {children} 
-      </>
-    )
-  }
-  
 
-/** RESPONSIVE MOBILE FIRST DESIGN **/
-// This will center text on mobile, and left align it on screens 640px and wider
-// <div class="text-center sm:text-left"></div> 
+return (
+<>
+      
+       {children} 
+</>)
+}
+
+
+type Props = {
+  data?: Record<string, unknown>;
+};
+
+const _CopyFC: FC<Props> = () => { return (<></>)}
+
+
+
+

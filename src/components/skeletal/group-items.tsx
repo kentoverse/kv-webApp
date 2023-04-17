@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import data from '../../utils/example.json';
+import data from '@/data/example.json';
 
 
 export function CardGroupRow({ fontSans, fontMono, theme, hide,

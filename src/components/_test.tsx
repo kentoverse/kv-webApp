@@ -1,8 +1,13 @@
-import Link from "next/link"
-import { ReactPropTypes } from "react"
+import { ReactPropTypes, 
+         ChangeEvent, 
+         Dispatch, 
+         ReactNode, 
+         useReducer, 
+         useState } from 'react';
+import Link from "next/link";
 
 
-export function TestingA({}) {
+export function TestingA() {
 
 return (
 <>
@@ -54,6 +59,128 @@ export function DynamicRouting() {
     </>
   )
 }
+
+
+
+/// COUNTER APP REDUCER
+
+const enum COUNT_ACTION_TYPES {
+  INCREMENT,
+  DECREMENT,
+  NEW_INPUT
+}
+
+const initalStateCount = { 
+  count: 0, 
+  text: ''
+}
+
+type countActionType = {
+  type: COUNT_ACTION_TYPES,
+  payload?: string,
+}
+
+const countReducer = (state: typeof initalStateCount, action: countActionType) :  typeof initalStateCount => {
+
+  switch (action.type) {
+      case COUNT_ACTION_TYPES.INCREMENT:
+          return { ...state, count: state.count + 1}
+      case COUNT_ACTION_TYPES.DECREMENT:
+          return {...state, count: state.count -1}
+      case COUNT_ACTION_TYPES.NEW_INPUT:
+          return {...state, text: action.payload ?? '' }
+      default:
+              throw new Error()
+  }
+}
+
+type ChildrenType = {
+  children: (num : number) => ReactNode,
+}
+
+export function CounterReducer ({children} : ChildrenType) {
+  //const [count, setCount] = useState<number>(1)
+
+  const [state, dispatch] = useReducer(countReducer, initalStateCount);
+  const increment = () => dispatch({type: COUNT_ACTION_TYPES.INCREMENT})
+  const decrement = () => dispatch({type: COUNT_ACTION_TYPES.DECREMENT})
+  const handleTextInput = (e: ChangeEvent<HTMLInputElement>) => {
+      dispatch({ type: COUNT_ACTION_TYPES.NEW_INPUT, 
+                 payload: e.target.value
+              })
+  } 
+
+  return (
+      <>
+          <h2 className='font-mono font-bold text-lg px-4 py-2 text-indigo-500'>{children(state.count)}</h2>
+          <div>
+              <button className='bg-skin-button-accent px-4 py-2 text-2xl mr-3' onClick={increment}>+</button>
+              <button className='bg-skin-button-accent px-4 py-2 text-2xl' onClick={decrement}>-</button>
+          </div>
+          <input placeholder='Input Number' className='bg-black text-white px-4 py-2 mt-3' type="text" onChange={handleTextInput} />
+          <h3 className='font-mono font-bold text-sm px-4 py-2 text-pink-500' >{state.text}</h3>
+      </>
+      
+  )
+
+}
+
+/// POST APP
+
+
+const enum POST_ACTION_TYPES {
+    FETCH_START, 
+    FETCH_SUCESS,
+    FETCH_ERROR 
+}
+
+type PostType = {
+    loading: boolean;
+    error: boolean;
+    post: Record<string, number>
+}
+
+const initialStatePost = {
+    loading: false,
+    error: false,
+    post: {},
+}
+
+//  COUNT APP
+
+
+function PostReducer (
+    state : typeof initialStatePost , action: {type: string, payload: Record<string, number>} ) {
+    switch(action.type) {
+
+        case 'FETCH_START': 
+        return {
+            laoding: true,
+            error: false,
+            post: {},
+        }
+
+        case 'FETCH_SUCESS': 
+        return {
+            ...state,
+            loading: false,
+            post: action.payload,
+        }
+        case 'FETCH_ERROR': 
+        return {
+            laoding: true,
+            error: true,
+            post: {},
+        }
+        default: 
+            return state;
+
+    }
+
+}
+
+
+
 
 
 

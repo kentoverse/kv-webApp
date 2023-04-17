@@ -1,4 +1,4 @@
-import pokemon from '../../utils/pokemon.json'
+import pokemon from '@/data/pokemon.json';
 
 
 

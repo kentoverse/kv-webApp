@@ -15,7 +15,12 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@styles/*": ["./src/styles/*"], "@components/*": ["./src/components/*"], 
+      "@styles/*": ["./src/libs/styles/*"], 
+      "@components/*": ["./src/components/*"], 
+      "@/stores/*":["./src/libs/stores/*"],
+      "@/utils/*":["./src/libs/utils/*"],
+      "@/data/*":["./src/libs/data/*"],
+      "@/apis/*":["./src/libs/apis/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/atoms/button-styled.jsx", "src/components/organism/hero-next.jsx", "src/components/atoms/button-tw.jsx", "src/pages/api/search.ts"],
