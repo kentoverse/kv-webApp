@@ -12,8 +12,8 @@ const pageRoutes = [
 
 export function NavMenu({
 
-}: {
-    }) {
+}:{
+}){
 
 
     return (

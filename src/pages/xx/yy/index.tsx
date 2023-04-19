@@ -1,8 +1,8 @@
 
 import Image from "next/image";
-import { usePokemon } from "../../../libs/store/PokemonContext";
+import { usePokemon } from "../../../libs/stores/PokemonContext";
 import { DarkToggele } from "../../../components/_test";
-export { getServerSideProps } from "../../../libs/store/PokemonContext";
+export { getServerSideProps } from "../../../libs/stores/PokemonContext";
 
 
 export default function Pokedex() {

@@ -1,4 +1,5 @@
 import React, { MouseEventHandler } from "react";
+import { useToggle } from '../../libs/services/handle-toggle';
 
 
 export function ButtonAccent({
@@ -81,6 +82,36 @@ return (
 )
 }
 
+
+
+
+// export function ButtonToggle({ 
+// }:{
+// }){
+
+   
+//   const [state , handlers ] = useToggle(false);
+
+//   const { toggle }: () => void; } = handlers;
+
+
+//   const handleClick = () => {
+//     toggle();
+//   }
+
+
+// return (
+// <>
+// <div>
+//       <button onClick={handleClick}>Toggle Content
+//       {state ? 'Hide' : 'Show'} 
+//       Content
+//       </button>
+//       {state && <p>Some content to show or hide</p>}
+//     </div>
+
+// </>
+//     )
 
 
 // (<a href={href} role="button" aria-pressed="true"

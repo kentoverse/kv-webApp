@@ -1,8 +1,9 @@
+
 import "@styles/globals.css";
 import type { AppProps } from 'next/app';
-import { ThemeContextProvider } from '../libs/store/ThemeContext';
+import { ThemeContextProvider } from '../libs/stores/ThemeContext';
 import SiteLayout from './layout';
-import { PokemonProvider } from '../libs/store/PokemonContext';
+import { PokemonProvider } from '../libs/stores/PokemonContext';
 
 console.log("FireBase--->", process.env.FIREBASE_API_KEY);
 

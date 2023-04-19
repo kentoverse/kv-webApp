@@ -2,23 +2,23 @@
     "cards": [
         {
             "id": 1,
-            "title": "project",
+            "title": "Functions",
             "description": "Find in-depth information about Next.js features and API",
-            "href": "/xx/yy/project",
+            "href": "/xx/yy/test",
             "src": "/img/icons/cross.png"
         },
         {
             "id": 2,
-            "title": "dashboard",
+            "title": "Components",
             "description": "Learn about Next.js in an interactive course with&nbsp;quizzes!",
-            "href": "/xx/yy/dashboard",
+            "href": "/xx/yy/",
             "src": "/img/icons/cross.png"
         },
         {
             "id": 3,
-            "title": "about-us",
+            "title": "Page",
             "description": "Discover and deploy boilerplate example Next.js&nbsp;projects.",
-            "href": "/xx/yy/about-us",
+            "href": "/xx/yy/page",
             "src": "/img/icons/cross.png"
         }
     ]

@@ -1,18 +1,12 @@
-import Link from "next/link"
-import { ReactPropTypes } from "react"
+import Link from "next/link";
+import { CounterReducer} from '@components/_test';
 
+type PROPS = {
+   
+  
+}
 
-
-
-
-
-
-
-
-export default function TestingA({}) {
-
-
-
+const TestingA = () =>  {
 
 
 
@@ -24,10 +18,13 @@ export default function TestingA({}) {
         <h3 className="font-sans font-bold text-sm 
             bg-pink-100 text-gray-400 px-3 py-2">TEST PAGE</h3>
       </div>
-{/*  -------------------------------------------------------------------------*/}
+{/*  -------------------------- Start Code Here to Render Page -----------------------------------*/}
       <div className="bg-gray-100 w-full position-relative h-[100vh]">
 
 
+  <CounterReducer>
+    {(num: number) => <>Current Count: {num}</>}
+  </CounterReducer>
       </div>
 
     </>
@@ -61,9 +58,27 @@ export function DarkToggele({}) {
 
 
 
+export default TestingA;
+
 
 
 
 /** RESPONSIVE MOBILE FIRST DESIGN **/
 // This will center text on mobile, and left align it on screens 640px and wider
 // <div class="text-center sm:text-left"></div> 
+
+
+
+  // const handleFetch = () => {
+
+  //     dispatch({type: ACTION_TYPES.FETCH_START })
+
+  //     fetch("https://jsonplaceholder.typicode.com/posts/1").then((res) => {
+  //       return res.json();
+  //     }).then((data) => {
+  //     dispatch({type:ACTION_TYPES.FETCH_SUCESS, payload: data })
+  //     })
+  //     .catch((e) => {
+  //       console.log({type:ACTION_TYPES.FETCH_ERROR})
+  //     })
+  // }

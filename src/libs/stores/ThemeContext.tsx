@@ -5,7 +5,7 @@ import {
   SetStateAction,
   useState,
 } from "react";
-import { ITheme } from "../Interfaces";
+import { ITheme } from "../data/Interfaces";
 
 export const emptyTheme : ITheme = { name: "", description: "",
 color: {
