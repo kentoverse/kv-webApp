@@ -1,7 +1,4 @@
 import pokemon from '@/data/pokemon.json';
-
-
-
 import { NextApiRequest, NextApiResponse } from 'next';
 
 

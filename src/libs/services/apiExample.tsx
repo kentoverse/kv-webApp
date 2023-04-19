@@ -17,6 +17,7 @@ function MyPage(props : ReactPropTypes | any) {
 
 
 MyPage.getInitialProps = async function() {
+  
   const res = await fetch('https://example.com/api/data');
   const data = await res.json();
 
@@ -27,3 +28,4 @@ MyPage.getInitialProps = async function() {
 };
 
 export default MyPage;
+

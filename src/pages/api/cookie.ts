@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { setCookie } from '../../libs/apis/set-cookies'
+import { setCookie } from '../../libs/services/set-cookies'
 
 
 

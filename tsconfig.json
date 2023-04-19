@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,14 +19,40 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@styles/*": ["./src/libs/styles/*"], 
-      "@components/*": ["./src/components/*"], 
-      "@/stores/*":["./src/libs/stores/*"],
-      "@/utils/*":["./src/libs/utils/*"],
-      "@/data/*":["./src/libs/data/*"],
-      "@/apis/*":["./src/libs/apis/*"],
-    }
+      "@styles/*": [
+        "./src/libs/styles/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@/stores/*": [
+        "./src/libs/stores/*"
+      ],
+      "@/utils/*": [
+        "./src/libs/utils/*"
+      ],
+      "@/data/*": [
+        "./src/libs/data/*"
+      ],
+      "@/servicess/*": [
+        "./src/libs/services/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/atoms/button-styled.jsx", "src/components/organism/hero-next.jsx", "src/components/atoms/button-tw.jsx", "src/pages/api/search.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*.ts",
+    "build/types/**/*.ts",
+    "app/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
