@@ -103,7 +103,7 @@ sudo chmod -R u+w /Users/mocavada/Library/Caches/pip
 - Tailwind Inline Variabke 
 https://v2.tailwindcss.com/docs/just-in-time-mode
 
-#UI Dev
+# UI Dev
 -  Chakra UI - (https://chakra-ui.com)
 
 - Styled JSX (https://github.com/vercel/styled-jsx)
@@ -119,3 +119,14 @@ https://v2.tailwindcss.com/docs/just-in-time-mode
 132 x 132
 140 x 140
 
+
+# Environment
+
+whoami - 'check ip'
+export NODE_ENV=local - 'to persist'
+nano ~/.bashrc
+export NODE_ENV=development
+source ~/.bashrc
+echo $NODE_ENV
+
+```
