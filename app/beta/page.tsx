@@ -1,6 +1,8 @@
 
 
+import Button from "../components/buttons";
 import styles from "./../app.module.css";
+import Feedback from "./feedback/form";
 
 
 console.log("This is Beta page in Server");
@@ -13,6 +15,10 @@ const AppPage = () => {
      <h1 className="text-orange-600 font-extrabold">NextJS 13 App Directory TW</h1>
 
      <h2 className={styles.text}>NextJS 13 App Directory CSS Module</h2>
+
+     <Button>This is a Button</Button>
+
+ 
 
 
     

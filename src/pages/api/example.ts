@@ -18,17 +18,17 @@ export default function handler (
   res.status(200).json([
     { 
         id: 1,
-        name: 'John Doe',
+        name: 'John',
         description: 'This is the description..'
       },
       { 
         id: 2,
-        name: 'Marc Doe',
+        name: 'Marc',
         description: 'This is the description..'
       },
       { 
         id: 3,
-        name: 'Lit Doe',
+        name: 'Lit',
         description: 'This is the description..'
       },
 

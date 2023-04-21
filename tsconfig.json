@@ -49,8 +49,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/**/*.ts",
-    "build/types/**/*.ts",
-    "app/**/*.ts",
+    "build/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

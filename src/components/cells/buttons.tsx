@@ -1,8 +1,10 @@
-import React, { MouseEventHandler } from "react";
+import React, { ButtonHTMLAttributes, MouseEventHandler } from "react";
 import { useToggle } from '../../libs/utils/handle-toggle';
 
 
-export function ButtonAccent({
+
+
+export function ButtonAccent ({
     type,
     label,
     onClick,
