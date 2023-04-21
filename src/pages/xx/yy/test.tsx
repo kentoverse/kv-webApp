@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { CounterReducer} from '@components/_test';
 
-type PROPS = {
-   
-  
-}
 
 const TestingA = () =>  {
 

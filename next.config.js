@@ -19,6 +19,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  server: {
+    // This will only work with Next.js 12 or newer.
+    externalResolver: true,
+  },
 }
 
 module.exports = nextConfig
