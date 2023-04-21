@@ -60,35 +60,7 @@
 }
 
 @layer utilities {
-/* 
-  .text-primary:hover {
-    color: #007bff;
-  }
 
-
-  @media (min-width: 640px) {
-    .mobile\:text-center {
-      text-align: center
-    }
-  }
-
-  @media (min-width: 720px) {
-    .tablet\:text-center {
-      text-align: center
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .laptop\:text-center {
-      text-align: center
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .desktop\:text-center {
-      text-align: center
-    }
-  } */
 }
 
 
@@ -102,19 +74,3 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-/* .next-theme {
-  color: rgb(var(--foreground-rgb));
-
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-} */
