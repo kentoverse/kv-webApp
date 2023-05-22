@@ -77,11 +77,11 @@ export default function SiteLayout({
                     isOPen={modalOpen}
                     handleClose={() => setModalOpen(!modalOpen)}
                 >
-                    <div className={`flex flex-col justify-between h-full w-full`}>
-                        <div className={`flex flex-col mt-auto mb-auto items-center p-8`}>
-                            <span>Are your sure want to cancel?</span>
-                            <span>Your current progress will be lost</span>
-                            <img className="w-80" src="/img/site/marco_1000x1000.png" alt="marco in modal"/>
+                    <div className={`kv-modal-content flex flex-col justify-between h-full w-full`}>
+                        <div className={`flex flex-col items-center p-8`}>
+                            <h4>Are your sure want to cancel?</h4>
+                            <h4>Your current progress will be lost</h4>
+                            <img className="w-40" src="/img/site/marco_1000x1000.png" alt="marco in modal" />
                         </div>
                         <div className={'flex flex-col sm:flex-row justify-center gap-8 align-middle'}>
                             <button className={'bg-red-200 text-black'}
@@ -100,7 +100,7 @@ export default function SiteLayout({
                 </Modal>
             )}
 
-            <button className={'bg-red-200 text-black text-lg font-extrabold px-6 py-3'}
+            <button className={'kv-modal-click bg-red-200 text-black text-lg font-extrabold px-6 py-3'}
                 type='button'
                 onClick={
                     () =>

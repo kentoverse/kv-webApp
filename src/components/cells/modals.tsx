@@ -37,7 +37,7 @@ export function Modal({
     return (
         <ReactPortal wrapperId={`react-portal-modal-container`}>
             <>
-            <div className={'fixed top-0 left-0 w-screen h-screen z-100 bg-neutral-800 opacity-70'} />
+            <div className={'kv-modal-wrapper fixed top-0 left-0 w-screen h-screen z-100 bg-neutral-800 opacity-70'} />
                 <div className={`fixed rounded flex flex-col box-border min-w-fit overlfow-hidden p-5 bg-zinc-300 inset-y-32 inset-x-24`}>
                     <button className={`
                         text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover
