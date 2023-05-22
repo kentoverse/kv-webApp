@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm package-lock.json && rm -rf node_modules && rm -rf build",
     "info": "next info && next -h",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "dev2": "next dev -p 4000",
     "build": "next build",
     "start": "next start -p 3002",
