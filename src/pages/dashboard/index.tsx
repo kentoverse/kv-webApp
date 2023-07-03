@@ -1,13 +1,13 @@
 
 import Image from "next/image";
-import { usePokemon } from "../../../hooks/providers/PokemonContext";
-import { DarkToggele } from "../../../../components/_test";
-export { getServerSideProps } from "../../../hooks/providers/PokemonContext";
+import { useData } from "@hooks/providers/DataContext";
+import { DarkToggele } from "@components/_test";
+export { getServerSideProps } from "@hooks/providers/DataContext";
 
 
 export default function Pokedex() {
 
-    const { pokemon, filter, setFilter } = usePokemon();
+    const { pokemon, filter, setFilter } = useData();
 
     console.log('pokemon list - ', pokemon);
 
@@ -30,9 +30,11 @@ export default function Pokedex() {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mt-5">
-                { pokemon.map((p) => (
-                    <div className="grid bg-pink-100 dark:bg-slate-300">
-                        <Image
+                { pokemon.map((p, idx) => (
+                    <div 
+                    key={idx}
+                    className="grid bg-pink-100 dark:bg-slate-300">
+                        <Image  
                             className="w-auto h-[40px]"
                             alt={p.name}
                             src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${p.image}`}

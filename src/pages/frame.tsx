@@ -12,7 +12,7 @@ import { Modal } from '@components/ui/modals';
 console.log('Basic --', basic);
 
 
-export default function SiteLayout({
+export default function MainFrame ({
     children
 }: {
     children: React.ReactNode,

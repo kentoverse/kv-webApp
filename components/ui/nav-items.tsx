@@ -4,8 +4,8 @@ import Image from "next/image"
 
 const pageRoutes = [
     { name: 'Home', path: '/' },
-    { name: 'Dashboard', path: '/dashboard' },
-    { name: 'About', path: '/about-us' },
+    { name: 'Dashboard', path: '/' },
+    { name: 'About', path: '/' },
     { name: 'Chat', path: '/botski/chat' },
 ]
 

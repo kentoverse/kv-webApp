@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import {  useState } from 'react'
 
 
-export default function DynamicRoute({pageData} : any) {
+export default function DynamicRoute ({pageData} : any) {
 
 const [description, setDescription] = useState("");
   

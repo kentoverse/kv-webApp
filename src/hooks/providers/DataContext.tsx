@@ -18,7 +18,7 @@ export async function getServerSideProps() {
 }
 
 
-const usePokemonController = (pokemon: Pokemon[]) => {
+const useDataController = (pokemon: Pokemon[]) => {
 
   const [filter, setFilter] = useState("");
 
@@ -43,21 +43,21 @@ const usePokemonController = (pokemon: Pokemon[]) => {
   };
 };
 
-const PokemonContext = createContext<ReturnType<typeof usePokemonController>>({
+const DataContext = createContext<ReturnType<typeof useDataController>>({
   filter: "",
   setFilter: () => {},
   pokemon: [],
 });
 
-export const PokemonProvider = ({ 
+export const DataProvider = ({ 
     pokemon, 
     children }:{ 
     pokemon: any,
     children: React.ReactNode,   
     }) => (
-  <PokemonContext.Provider value={usePokemonController(pokemon)}>
+  <DataContext.Provider value={useDataController(pokemon)}>
     {children}
-  </PokemonContext.Provider>
+  </DataContext.Provider>
 );
 
-export const usePokemon = () => useContext(PokemonContext);
+export const useData = () => useContext(DataContext);
