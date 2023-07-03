@@ -1,13 +1,27 @@
-import {
-  createContext,
-  useContext,
-  Dispatch,
-  SetStateAction,
-  useState,
-} from "react";
-import { ITheme } from "../../helper/data/Interfaces";
+import {createContext,useContext,Dispatch,SetStateAction,useState} from 'react';
 
-export const emptyTheme : ITheme = { name: "", description: "",
+interface ITheme {
+  name: string;
+  description: string;
+  color: {
+    base: string;
+    inverted: string;
+  };
+  background: {
+    fill: string,
+    image: string,
+  };
+  button: {
+    action: string,
+    success: string,
+    size: string,
+  };
+}
+
+
+export const emptyTheme : ITheme = { 
+name: "", 
+description: "",
 color: {
   base: "",
   inverted: ""
@@ -19,6 +33,8 @@ button: {
   success: "",
   size: "" }
 }
+
+
 
 interface IThemeContext {
   themeId: string;

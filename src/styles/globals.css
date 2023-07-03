@@ -50,71 +50,60 @@
     --color-button-accent-hover: rgb(55, 79, 5);
 
     --color-button-muted: rgb(212, 255, 122);
-
-  }
-}
-
-@layer components {
-
-
-}
-
-@layer utilities {
-/* 
-  .text-primary:hover {
-    color: #007bff;
   }
 
 
-  @media (min-width: 640px) {
-    .mobile\:text-center {
-      text-align: center
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
     }
   }
 
-  @media (min-width: 720px) {
-    .tablet\:text-center {
-      text-align: center
+
+  @media (prefers-color-scheme: light) {
+
+    /** set color / dark theme **/
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
     }
+
   }
 
-  @media (min-width: 1024px) {
-    .laptop\:text-center {
-      text-align: center
-    }
-  }
 
-  @media (min-width: 1280px) {
-    .desktop\:text-center {
-      text-align: center
-    }
-  } */
-}
-
-
-@media (prefers-color-scheme: light) {
-
-  /** set color / dark theme **/
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 
 }
 
 
 
 
-
-
-
-
-
-/* .next-theme {
+body {
   color: rgb(var(--foreground-rgb));
-
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-} */
+}
+
+.scrollbar-w-2::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+
+.scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+  --bg-opacity: 0.3;
+  background-color: rgb(10, 102, 194);
+  background-color: rgba(10, 102, 194, var(--bg-opacity));
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CounterReducer} from '../../../../components/_test';
+import { CounterReducer} from '@components/_test';
 
 
 const TestingA = () =>  {
@@ -30,7 +30,7 @@ const TestingA = () =>  {
 
 
 
-export function DarkToggele({}) {
+export function DarkToggele() {
 
   return (
 

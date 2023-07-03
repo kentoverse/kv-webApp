@@ -1,10 +1,11 @@
-import { Dispatch, SetStateAction, ReactNode, CSSProperties } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import { Url } from 'url';
+
 
 export interface IAccount {
   firstName: string;
   age: number;
-};
+}
 
 export interface IAccountContext {
   accountId: string,

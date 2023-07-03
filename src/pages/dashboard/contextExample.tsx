@@ -1,4 +1,4 @@
-import createFastContext from "../../../hooks/providers/FastContext";
+import createFastContext from '@hooks/providers/FastContext';
 
 const { Provider, useStore } = createFastContext({
   first: "",
@@ -57,7 +57,7 @@ const ContentContainer = () => {
   );
 };
 
-function App() {
+function Context() {
   return (
     <Provider>
       <div className="container">
@@ -68,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default Context;
