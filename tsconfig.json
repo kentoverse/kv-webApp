@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,24 +15,14 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@styles/*": [
-        "./src/libs/styles/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@/stores/*": [
-        "./src/libs/stores/*"
-      ],
-      "@/utils/*": [
-        "./src/libs/utils/*"
-      ],
-      "@/data/*": [
-        "./src/libs/data/*"
-      ],
-      "@/servicess/*": [
-        "./src/libs/api-services/*"
-      ]
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@context/*": ["./src/context/*"],
+      "@helper/*": ["./src/helper/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@types/*": ["./src/types/*"],
     },
     "plugins": [
       {
@@ -49,9 +35,9 @@
     "**/*.ts",
     "**/*.tsx",
     "src/**/*.ts",
-    "build/types/**/*.ts"
+    "app/**/*/*.ts",
+    "components/**/*/*.ts",
+    "build/types/**/*.ts",
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

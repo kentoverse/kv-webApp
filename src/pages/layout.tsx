@@ -1,14 +1,13 @@
+
+import { useEffect, useState } from 'react';
 import { Inter, Roboto_Mono, Bitter } from 'next/font/google';
 import { usePathname } from 'next/navigation';
-import { useThemeContext } from '../libs/stores/ThemeContext';
-import { useEffect, useState } from 'react';
-
-import { HeroNext } from "@components/skeletal/heroes";
-import { CardGroupRow } from "@components/skeletal/group-items";
-import { NavFloater, NavMenu, NavLogo } from "@components/skeletal/nav-items";
-import { basic } from "../libs/data/themes";
-import { Modal } from '@components/cells/modals';
-
+import { useThemeContext } from '../hooks/providers/ThemeContext';
+import { HeroNext } from "@components/ui/heroes";
+import { CardGroupRow } from "@components/ui/group-items";
+import { NavFloater, NavMenu, NavLogo } from "@components/ui/nav-items";
+import { basic } from "../helper/data/themes";
+import { Modal } from '@components/ui/modals';
 
 console.log('Basic --', basic);
 
@@ -147,10 +146,6 @@ export const sampleTheme =
         size: "mx-auto px-4",
     }
 }
-
-
-
-
 
 
 export function Footer() {

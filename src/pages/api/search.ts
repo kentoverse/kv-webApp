@@ -1,4 +1,4 @@
-import pokemon from '@/data/pokemon.json';
+import pokemon from '../../helper/data/pokemon.json';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 
@@ -16,7 +16,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse): void
             .slice(0, 18)
         )
       );
-};
+}
+
+
 
 
     // res.send(
