@@ -2,9 +2,15 @@
 import Image from "next/image";
 import { ButtonAccent } from "@components/cells/buttons";
 import Headings from "@components/cells/headings";
-
+import { Modal } from "@components/cells/modals";
+import { useState } from "react";
+import { findAllByDisplayValue } from "@storybook/testing-library";
 
 export function HeroNext({ }: {}) {
+
+
+
+
 
   return (
     <>
@@ -30,6 +36,9 @@ export function HeroNext({ }: {}) {
               onClick={undefined}
               isLink={false} href={undefined}
             />
+
+
+
           </div>
 
         </div>
@@ -49,6 +58,18 @@ export function HeroNext({ }: {}) {
     </>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 export function BannerCall2Action({
@@ -105,6 +126,8 @@ export function BannerCall2Action({
     </>
   )
 }
+
+
 
 
 
