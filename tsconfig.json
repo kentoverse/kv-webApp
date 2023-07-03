@@ -22,7 +22,6 @@
       "@context/*": ["./src/context/*"],
       "@helper/*": ["./src/helper/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@types/*": ["./src/types/*"],
     },
     "plugins": [
       {

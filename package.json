@@ -9,14 +9,9 @@
     "clean": "rm package-lock.json && rm -rf node_modules && rm -rf build",
     "info": "next info && next -h",
     "dev": "next dev -p 3001",
-    "dev2": "next dev -p 4000",
     "build": "next build",
     "start": "next start -p 3002",
-    "lint": "next lint",
-    "gpush": "git add --all && git commit -m \"dev-done\" && git push origin main",
-    "fbdep": "rm -rf .firebase && firebase experiments:enable webframeworks && firebase --open-sesame deletegcfartifacts && firebase functions:deletegcfartifacts",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
@@ -48,20 +43,12 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.5",
-    "@storybook/addon-interactions": "^7.0.5",
-    "@storybook/addon-links": "^7.0.5",
-    "@storybook/blocks": "^7.0.5",
-    "@storybook/nextjs": "^7.0.5",
-    "@storybook/react": "^7.0.5",
-    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/cookie": "^0.5.1",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
-    "storybook": "^7.0.5",
     "typescript": "^5.0.4"
   }
 }

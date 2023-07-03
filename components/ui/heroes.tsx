@@ -2,9 +2,6 @@
 import Image from "next/image";
 import { ButtonAccent } from '@components/ui/mybuttons';
 import Headings from '@components/ui/headings';
-import { Modal } from '@components/ui/modals'
-import { useState } from "react";
-import { findAllByDisplayValue } from "@storybook/testing-library";
 
 export function HeroNext() {
 
@@ -55,17 +52,6 @@ export function HeroNext() {
     </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

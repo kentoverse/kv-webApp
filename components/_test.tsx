@@ -27,7 +27,7 @@ return (
 
 
 
-export function DarkToggele({}) {
+export function DarkToggele() {
 
   return (
 

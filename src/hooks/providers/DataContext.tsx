@@ -1,4 +1,4 @@
-import { useState, useMemo, createContext, useContext, ReactNode } from "react";
+import { useState, useMemo, createContext, useContext } from "react";
 
 interface Pokemon {
   id: number;
